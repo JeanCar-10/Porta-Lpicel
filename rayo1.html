@@ -679,8 +679,21 @@ main{
 
 
 
+
 /* ==========================================
-   
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+  ==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+========================================== 
 
 
 
@@ -690,9 +703,21 @@ main{
 
 
 
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
 
-
-
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
 ========================================== */
 
 
@@ -718,23 +743,210 @@ color:#d96b9b;
 
 
 
+/* ==========================================
+   TARJETA PASO PC GRANDE
+========================================== */
+
+
 .paso-card{
 
 
-max-width:400px;
+width:90%;
 
-margin:40px auto;
+
+max-width:1400px;
+
+
+margin:50px auto;
 
 
 background:#ffe4ef;
 
-border-radius:30px;
+
+border-radius:40px;
+
 
 overflow:hidden;
 
 
+display:flex;
+
+
+align-items:center;
+
+
+padding:40px;
+
+
+gap:60px;
+
+
 box-shadow:
-0 10px 25px rgba(0,0,0,.15);
+
+0 15px 35px rgba(220,120,160,.25);
+
+
+}
+
+
+
+
+/* FOTO GRANDE IZQUIERDA */
+
+
+.paso-card img{
+
+
+width:55%;
+
+
+height:600px;
+
+
+object-fit:cover;
+
+
+border-radius:35px;
+
+
+cursor:pointer;
+
+
+}
+
+
+
+/* INFORMACIÓN DERECHA */
+
+
+.paso-info{
+
+
+flex:1;
+
+
+text-align:left;
+
+
+}
+
+
+
+.paso-info h3{
+
+
+font-size:3.5rem;
+
+
+color:#d96b9b;
+
+
+}
+
+
+
+.paso-info p{
+
+
+font-size:2rem;
+
+
+color:#555;
+
+
+line-height:1.4;
+
+
+}
+
+
+
+
+
+.consejo{
+
+
+margin-top:35px;
+
+
+background:white;
+
+
+padding:25px;
+
+
+border-radius:25px;
+
+
+font-size:1.5rem;
+
+
+}
+
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+
+@media(max-width:1000px){
+
+
+
+.paso-card{
+
+
+width:90%;
+
+
+gap:30px;
+
+
+}
+
+
+
+.paso-card img{
+
+
+height:450px;
+
+
+}
+
+
+
+}
+
+
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+
+@media(max-width:700px){
+
+
+
+.paso-card{
+
+
+width:90%;
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+padding:0;
+
+
+gap:0;
 
 
 }
@@ -747,15 +959,14 @@ box-shadow:
 
 width:100%;
 
+
 height:280px;
 
-object-fit:cover;
 
-cursor:pointer;
+border-radius:0;
 
 
 }
-
 
 
 
@@ -765,13 +976,16 @@ cursor:pointer;
 padding:25px;
 
 
+text-align:center;
+
+
 }
+
 
 
 
 .paso-info h3{
 
-color:#d96b9b;
 
 font-size:2rem;
 
@@ -784,11 +998,10 @@ font-size:2rem;
 .paso-info p{
 
 
-font-size:1.3rem;
+font-size:1.2rem;
 
 
 }
-
 
 
 
@@ -796,26 +1009,40 @@ font-size:1.3rem;
 .consejo{
 
 
-margin-top:20px;
+font-size:1rem;
 
 
-background:#fff;
-
-padding:15px;
-
-
-border-radius:20px;
-
-
-color:#777;
+}
 
 
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================
-   VISOR FULLSCREEN
+   VISOR FULLSCREEN IMAGEN
 ========================================== */
 
 
@@ -830,10 +1057,12 @@ position:fixed;
 
 top:0;
 
+
 left:0;
 
 
 width:100%;
+
 
 height:100%;
 
@@ -844,13 +1073,13 @@ background:rgba(0,0,0,.90);
 z-index:999999;
 
 
-flex-direction:column;
-
-
 align-items:center;
 
 
-overflow:auto;
+justify-content:center;
+
+
+overflow:hidden;
 
 
 }
@@ -859,16 +1088,22 @@ overflow:auto;
 
 
 
+/* BOTÓN CERRAR */
+
+
 .visor button{
 
 
 position:absolute;
 
 
-top:20px;
+top:25px;
 
 
-right:25px;
+right:30px;
+
+
+z-index:10;
 
 
 background:#f7a8c4;
@@ -880,19 +1115,19 @@ border:none;
 color:white;
 
 
-font-size:25px;
+font-size:28px;
 
 
-width:45px;
+width:50px;
 
 
-height:45px;
+height:50px;
 
 
 border-radius:50%;
 
 
-z-index:2;
+cursor:pointer;
 
 
 }
@@ -901,19 +1136,15 @@ z-index:2;
 
 
 
+/* IMAGEN */
+
+
 .imagen-zoom{
 
 
-margin-top:80px;
+max-width:95%;
 
-
-width:90%;
-
-
-max-width:600px;
-
-
-height:420px;
+max-height:95%;
 
 
 object-fit:contain;
@@ -922,99 +1153,35 @@ object-fit:contain;
 border-radius:20px;
 
 
-
-/* permite zoom móvil */
-
-
-touch-action:pinch-zoom;
+cursor:grab;
 
 
-}
+transition:transform .2s ease;
 
 
+touch-action:none;
 
 
+/* BLOQUEAR ARRASTRE DEL NAVEGADOR */
 
-.visor-texto{
+user-select:none;
 
+-webkit-user-drag:none;
 
-background:#fff7fb;
-
-
-width:90%;
-
-
-max-width:600px;
-
-
-margin-top:25px;
-
-
-padding:25px;
-
-
-border-radius:25px;
-
-
-text-align:center;
+pointer-events:auto;
 
 
 }
 
 
 
+.imagen-zoom:active{
 
 
-.visor-texto h3{
-
-
-font-size:2rem;
-
-color:#d96b9b;
+cursor:grabbing;
 
 
 }
-
-
-
-
-
-/* ==========================================
-   RESPONSIVE CELULAR
-========================================== */
-
-
-@media(max-width:600px){
-
-
-.pasos h2{
-
-font-size:2.7rem;
-
-}
-
-
-
-.imagen-zoom{
-
-
-height:300px;
-
-
-}
-
-
-
-.visor-texto{
-
-font-size:1rem;
-
-}
-
-
-
-}
-
 
 
 
@@ -1426,6 +1593,11 @@ Deja secar 10 minutos
 ========================================== -->
 
 
+<!-- ==========================================
+     VISOR FULLSCREEN IMAGEN
+========================================== -->
+
+
 <div class="visor" id="visor">
 
 
@@ -1438,37 +1610,43 @@ Deja secar 10 minutos
 <img 
 src="imghk/pasos-hk-1.jpg"
 class="imagen-zoom"
+id="imagenZoom"
 >
 
 
-
-<div class="visor-texto">
-
-
-<h3>
-📌 Paso 1
-</h3>
-
-
-<p>
-Une los palitos formando la base
-</p>
-
-
-
-<div class="consejo">
-
-💡 Consejo:
-<br>
-Deja secar 10 minutos
-
 </div>
 
 
-</div>
 
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1665,7 +1843,351 @@ window.addEventListener('scroll',function(){
 
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==========================================
+// HEADER SCROLL
+// ==========================================
+
+
+
+const imagen = document.getElementById("imagenZoom");
+
+
+
+// Evitar que el navegador arrastre/cop ie la imagen
+
+imagen.addEventListener("dragstart", function(e){
+
+e.preventDefault();
+
+});
+
+
+
+// ==========================================
+// VARIABLES CONTROL IMAGEN
+// ==========================================
+
+
+let escala = 1;
+
+
+let posicionX = 0;
+
+let posicionY = 0;
+
+
+
+function actualizarImagen(){
+
+
+imagen.style.transform =
+
+`translate(${posicionX}px, ${posicionY}px) scale(${escala})`;
+
+
+}
+
+
+
+
+
+// ==========================================
+// ZOOM CON RUEDA DEL MOUSE
+// ==========================================
+
+
+
+imagen.addEventListener("wheel", function(e){
+
+
+e.preventDefault();
+
+
+
+if(e.deltaY < 0){
+
+
+escala += 0.15;
+
+
+}else{
+
+
+escala -= 0.15;
+
+
+}
+
+
+
+
+if(escala < 1){
+
+
+escala = 1;
+
+
+}
+
+
+
+if(escala > 3){
+
+
+escala = 3;
+
+
+}
+
+
+
+actualizarImagen();
+
+
+
+});
+
+
+
+
+
+// ==========================================
+// ZOOM CON DEDOS CELULAR
+// ==========================================
+
+
+let distanciaInicial = 0;
+
+
+
+imagen.addEventListener("touchstart", function(e){
+
+
+
+if(e.touches.length === 2){
+
+
+distanciaInicial = Math.hypot(
+
+e.touches[0].pageX - e.touches[1].pageX,
+
+e.touches[0].pageY - e.touches[1].pageY
+
+);
+
+
+}
+
+
+
+});
+
+
+
+
+
+imagen.addEventListener("touchmove", function(e){
+
+
+
+if(e.touches.length === 2){
+
+
+
+let distanciaActual = Math.hypot(
+
+e.touches[0].pageX - e.touches[1].pageX,
+
+e.touches[0].pageY - e.touches[1].pageY
+
+);
+
+
+
+
+
+if(distanciaActual > distanciaInicial){
+
+
+
+escala += 0.03;
+
+
+
+}else{
+
+
+
+escala -= 0.03;
+
+
+
+}
+
+
+
+
+
+if(escala < 1){
+
+
+escala = 1;
+
+
+}
+
+
+
+
+if(escala > 3){
+
+
+escala = 3;
+
+
+}
+
+
+
+
+actualizarImagen();
+
+
+
+}
+
+
+
+});
+
+
+
+
+
+
+// ==========================================
+// MOVER IMAGEN CON CLICK Y ARRASTRE
+// ==========================================
+
+
+
+let moviendo = false;
+
+
+
+let inicioX = 0;
+
+let inicioY = 0;
+
+
+
+imagen.addEventListener("mousedown", function(e){
+
+
+
+moviendo = true;
+
+
+
+inicioX = e.clientX - posicionX;
+
+
+inicioY = e.clientY - posicionY;
+
+
+
+imagen.style.cursor = "grabbing";
+
+
+
+});
+
+
+
+
+
+
+document.addEventListener("mousemove", function(e){
+
+
+
+if(!moviendo) return;
+
+
+
+
+posicionX = e.clientX - inicioX;
+
+
+posicionY = e.clientY - inicioY;
+
+
+
+
+actualizarImagen();
+
+
+
+});
+
+
+
+
+
+
+document.addEventListener("mouseup", function(){
+
+
+
+moviendo = false;
+
+
+
+imagen.style.cursor = "grab";
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
+
+
+
+
 
 </body>
 </html>
