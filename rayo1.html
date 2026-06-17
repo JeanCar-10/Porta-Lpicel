@@ -38,23 +38,33 @@
 }
 
 html{
-    scroll-behavior:smooth;
+
+overflow-x:hidden;
+
+width:100%;
+
 }
 
 body{
 
-    font-family:'Baloo 2', cursive;
+font-family:'Baloo 2', cursive;
 
-    background:#efefef;
+background:#efefef;
 
-    min-height:100vh;
+min-height:100vh;
 
-    display:flex;
+display:flex;
 
-    flex-direction:column;
+flex-direction:column;
 
-    overflow-x:hidden;
+overflow-x:hidden;
+
+width:100%;
+
 }
+
+
+
 
 /* ===================================================
    HEADER
@@ -411,7 +421,7 @@ main{
 
 .materiales{
 
-    padding:70px 40px;
+    padding:170px 40px;
 
     text-align:center;
 
@@ -724,6 +734,7 @@ main{
 .pasos{
 
 padding:70px 30px;
+padding-top: 120px;
 
 text-align:center;
 
@@ -1148,14 +1159,19 @@ cursor:grab;
 transition:transform .2s ease;
 
 
+
 touch-action:none;
+
 
 
 /* BLOQUEAR ARRASTRE DEL NAVEGADOR */
 
+
 user-select:none;
 
+
 -webkit-user-drag:none;
+
 
 pointer-events:auto;
 
@@ -2686,6 +2702,7 @@ e.preventDefault();
 // ==========================================
 
 
+
 let escala = 1;
 
 
@@ -2797,6 +2814,7 @@ posicionY = 0;
 img.style.transform =
 "translate(0px,0px) scale(1)";
 
+img.style.transition="transform .2s ease";
 
 
 // CAMBIAR IMAGEN
@@ -2836,13 +2854,21 @@ document.getElementById("visor").style.display="none";
 
 
 
+/// ==========================================
+// ZOOM Y MOVIMIENTO CELULAR
+// ==========================================
 
-// ==========================================
-// ZOOM CON DEDOS CELULAR
-// ==========================================
+
+let tocando = false;
+
+
+let inicioTouchX = 0;
+
+let inicioTouchY = 0;
 
 
 let distanciaInicial = 0;
+
 
 
 
@@ -2850,16 +2876,39 @@ imagen.addEventListener("touchstart", function(e){
 
 
 
+// ZOOM CON 2 DEDOS
+
+
 if(e.touches.length === 2){
 
 
 distanciaInicial = Math.hypot(
 
-e.touches[0].pageX - e.touches[1].pageX,
+e.touches[0].clientX - e.touches[1].clientX,
 
-e.touches[0].pageY - e.touches[1].pageY
+e.touches[0].clientY - e.touches[1].clientY
 
 );
+
+
+
+}
+
+
+// MOVER CON 1 DEDO
+
+
+if(e.touches.length === 1){
+
+
+tocando = true;
+
+
+inicioTouchX = e.touches[0].clientX - posicionX;
+
+
+inicioTouchY = e.touches[0].clientY - posicionY;
+
 
 
 }
@@ -2872,8 +2921,15 @@ e.touches[0].pageY - e.touches[1].pageY
 
 
 
+
+
 imagen.addEventListener("touchmove", function(e){
 
+
+
+// ===============================
+// ZOOM 2 DEDOS
+// ===============================
 
 
 if(e.touches.length === 2){
@@ -2882,9 +2938,9 @@ if(e.touches.length === 2){
 
 let distanciaActual = Math.hypot(
 
-e.touches[0].pageX - e.touches[1].pageX,
+e.touches[0].clientX - e.touches[1].clientX,
 
-e.touches[0].pageY - e.touches[1].pageY
+e.touches[0].clientY - e.touches[1].clientY
 
 );
 
@@ -2895,22 +2951,16 @@ e.touches[0].pageY - e.touches[1].pageY
 if(distanciaActual > distanciaInicial){
 
 
-
-escala += 0.03;
-
+escala +=0.03;
 
 
 }else{
 
 
-
-escala -= 0.03;
-
+escala -=0.03;
 
 
 }
-
-
 
 
 
@@ -2921,8 +2971,6 @@ escala = 1;
 
 
 }
-
-
 
 
 if(escala > 3){
@@ -2944,10 +2992,47 @@ actualizarImagen();
 
 
 
+
+// ===============================
+// MOVER 1 DEDO
+// ===============================
+
+
+
+if(tocando && e.touches.length === 1){
+
+
+
+posicionX = e.touches[0].clientX - inicioTouchX;
+
+
+posicionY = e.touches[0].clientY - inicioTouchY;
+
+
+
+actualizarImagen();
+
+
+
+}
+
+
+
 });
 
 
 
+
+
+
+
+imagen.addEventListener("touchend", function(){
+
+
+tocando=false;
+
+
+});
 
 
 
