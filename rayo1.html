@@ -1030,17 +1030,6 @@ font-size:1rem;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================
    VISOR FULLSCREEN IMAGEN
 ========================================== */
@@ -1186,6 +1175,303 @@ cursor:grabbing;
 
 
 
+
+
+
+/* ==========================================
+   BOTONES NAVEGACIÓN PASOS PC
+========================================== */
+
+/* ==========================================
+   BOTONES DENTRO DE CADA PASO PC
+========================================== */
+
+
+.pasos{
+
+position:relative;
+
+}
+
+
+
+
+
+.navegacion-pasos{
+
+
+position:absolute;
+
+
+right:20px;
+
+
+top:50%;
+
+
+transform:translateY(-50%);
+
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+gap:8px;
+
+
+z-index:10;
+
+
+
+}
+
+
+
+
+
+.btn-paso{
+
+
+background:#f7a8c4;
+
+
+color:white;
+
+
+text-decoration:none;
+
+
+width:65px;
+
+
+height:150px;
+
+
+
+display:flex;
+
+
+justify-content:center;
+
+
+align-items:center;
+
+
+text-align:center;
+
+
+
+border-radius:25px;
+
+
+
+font-size:1.1rem;
+
+
+font-weight:bold;
+
+
+
+box-shadow:
+
+0 8px 18px rgba(220,120,160,.35);
+
+
+
+transition:.3s;
+
+
+
+}
+
+
+
+
+
+/* GIRAR TEXTO */
+
+
+.btn-paso{
+
+
+writing-mode:vertical-rl;
+
+
+transform:rotate(180deg);
+
+
+
+}
+
+
+
+
+
+.btn-paso:hover{
+
+
+background:#f58bb3;
+
+
+transform:
+
+rotate(180deg)
+
+scale(1.08);
+
+
+
+}
+
+
+
+
+
+/* ==========================================
+   RESPONSIVE CELULAR
+========================================== */
+
+
+@media(max-width:700px){
+
+
+
+.navegacion-pasos{
+
+
+position:relative;
+
+
+right:auto;
+
+
+top:auto;
+
+
+transform:none;
+
+
+
+width:100%;
+
+
+
+display:flex;
+
+
+flex-direction:row;
+
+
+justify-content:center;
+
+
+
+gap:15px;
+
+
+
+margin-top:40px;
+
+
+}
+
+
+
+
+
+.btn-paso{
+
+
+writing-mode:horizontal-tb;
+
+
+transform:none;
+
+
+
+width:45%;
+
+
+height:60px;
+
+
+
+border-radius:30px;
+
+
+
+font-size:1.2rem;
+
+
+
+}
+
+
+
+
+.btn-paso:hover{
+
+
+transform:scale(1.05);
+
+
+
+}
+
+.btn-paso.volver{
+
+
+}
+
+
+.btn-paso.volver::first-letter{
+
+
+}
+
+
+
+.btn-paso.volver{
+
+font-size:0;
+
+}
+
+
+.btn-paso.volver::after{
+
+content:"⇠ Volvamos";
+
+font-size:1.2rem;
+
+}
+
+
+
+.btn-paso.avanzar{
+
+font-size:0;
+
+}
+
+
+
+.btn-paso.avanzar::after{
+
+content:"Vamos ⇢";
+
+font-size:1.2rem;
+
+}
+
+
+
+
+
+}
 
 
 
@@ -1526,15 +1812,27 @@ Permiten personalizar el diseño final
     ==========================================
     ==========================================
     ==========================================
+        ==========================================
+    ==========================================
+    ==========================================
+        ==========================================
+    ==========================================
+    ==========================================
      PASO 1
 ==========================================
 ==========================================
 ==========================================
 ==========================================
-========================================== -->
+==========================================
+    ==========================================
+    ==========================================
+    ==========================================
+        ==========================================
+    ==========================================
+    ========================================== -->
 
 
-<section class="pasos">
+<section class="pasos" id="paso1">
 
 
 <h2>
@@ -1582,15 +1880,40 @@ Deja secar 10 minutos
 </div>
 
 
-</section>
-
-
-
 
 
 <!-- ==========================================
-     VENTANA COMPLETA
+     NAVEGACIÓN PASOS
 ========================================== -->
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#materiales" class="btn-paso volver">
+
+
+Volvamos   ⇢
+
+</a>
+
+
+
+<a href="#paso2" class="btn-paso avanzar">
+
+⇠   Vamos
+
+
+</a>
+
+
+</div>
+
+<!-- ==========================================
+     NAVEGACIÓN PASOS
+========================================== -->
+
+
 
 
 <!-- ==========================================
@@ -1615,6 +1938,484 @@ id="imagenZoom"
 
 
 </div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 2
+========================================== -->
+
+
+<section class="pasos" id="paso2">
+
+
+<div class="paso-card">
+
+
+<img 
+src="imghk/pasos-hk-2.jpg"
+alt="Paso 2"
+onclick="abrirPaso('imghk/pasos-hk-2.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 2
+</h3>
+
+
+<p>
+Une las piezas principales para formar la estructura.
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Asegúrate que todo quede firme antes de continuar.
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<!-- BOTONES -->
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso1" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso3" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor2">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="imghk/pasos-hk-2.jpg"
+class="imagen-zoom"
+id="imagenZoom2"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 3
+========================================== -->
+
+
+<section class="pasos" id="paso3">
+
+
+<div class="paso-card">
+
+
+<img 
+src="imghk/pasos-hk-3.jpg"
+alt="Paso 3"
+onclick="abrirPaso('imghk/pasos-hk-3.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 3
+</h3>
+
+
+<p>
+Agrega los detalles decorativos al porta lapicel.
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Distribuye los adornos antes de pegarlos.
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso2" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso4" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor3">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="imghk/pasos-hk-3.jpg"
+class="imagen-zoom"
+id="imagenZoom3"
+>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 4
+========================================== -->
+
+
+<section class="pasos" id="paso4">
+
+
+<div class="paso-card">
+
+
+<img 
+src="imghk/pasos-hk-4.jpg"
+alt="Paso 4"
+onclick="abrirPaso('imghk/pasos-hk-4.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 4
+</h3>
+
+
+<p>
+Pinta y dale personalidad a tu creación.
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Aplica la pintura en capas delgadas.
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso3" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso5" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor4">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="imghk/pasos-hk-4.jpg"
+class="imagen-zoom"
+id="imagenZoom4"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 5
+========================================== -->
+
+
+<section class="pasos" id="paso5">
+
+
+<div class="paso-card">
+
+
+<img 
+src="imghk/pasos-hk-5.jpg"
+alt="Paso 5"
+onclick="abrirPaso('imghk/pasos-hk-5.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 5
+</h3>
+
+
+<p>
+Revisa los últimos detalles y finaliza tu Porta Lapicel.
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Déjalo secar completamente antes de usarlo.
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso4" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#final" class="btn-paso avanzar">
+
+⇠ Terminar
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor5">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="imghk/pasos-hk-5.jpg"
+class="imagen-zoom"
+id="imagenZoom5"
+>
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1963,6 +2764,74 @@ actualizarImagen();
 
 
 });
+
+
+
+
+
+function abrirPaso(imagenRuta){
+
+
+let visor = document.getElementById("visor");
+
+let img = document.getElementById("imagenZoom");
+
+
+
+// REINICIAR ZOOM
+
+escala = 1;
+
+
+
+// REINICIAR POSICIÓN
+
+posicionX = 0;
+
+posicionY = 0;
+
+
+
+// APLICAR ESTADO ORIGINAL
+
+img.style.transform =
+"translate(0px,0px) scale(1)";
+
+
+
+// CAMBIAR IMAGEN
+
+img.src = imagenRuta;
+
+
+
+// MOSTRAR VISOR
+
+visor.style.display="flex";
+
+
+}
+
+
+
+function cerrarPaso(){
+
+document.getElementById("visor").style.display="none";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
