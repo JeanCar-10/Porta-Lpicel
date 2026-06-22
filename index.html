@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>LapiCels</title>
+<title>Porta Lapicel</title>
+
+<link rel="icon" type="image/png" href="img/logo.png">
 
 <!-- =========================
      FUENTES
@@ -12,6 +14,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
+@font-face{
+
+    font-family:"PortaFuente";
+
+    src:url("fonts/ClickerScript-Regular.ttf") format("truetype");
+
+    font-weight:normal;
+
+    font-style:normal;
+
+}
+
+
+
+
+
+
+
 
 /* ===================================================
    RESET GENERAL
@@ -104,7 +125,7 @@ header{
 
     width:100%;
 
-    background:rgba(232, 223, 204);
+    background:rgba(242, 234, 208);
 
     backdrop-filter:blur(8px);
 
@@ -127,14 +148,15 @@ header{
 }
 
 .logo-container img{
-    width:75px;
+    width:50px;
     height:auto;
 }
 
 .logo-container a{
     text-decoration:none;
     color:#5C5C43;
-    font-size:3rem;
+    font-size:50px;
+    font-family:"PortaFuente", cursive;
     font-weight:700;
 
 }
@@ -168,7 +190,7 @@ header{
 
 .titulo{
     font-size:5.5rem;
-    line-height:0.95;
+    line-height:1.35;
     font-weight:800;
     margin-bottom:60px;
 }
@@ -191,10 +213,20 @@ header{
 
 .naranja{
     color:#f1732c;
+    font-family:"PortaFuente", cursive;
+    font-size:9.2rem;
 }
 
 .azul{
     color:#73add8;
+    font-family:"PortaFuente", cursive;
+    font-size:9.2rem;
+}
+
+.morado{
+    color:#B777BD;
+    font-family:"PortaFuente", cursive;
+    font-size:9.2rem;
 }
 
 /* ===================================================
@@ -231,7 +263,7 @@ header{
 
 #modelos{
 
-    padding:100px 20px 140px;
+    padding:130px 200px 140px;
 
     background:#ffffff;
 
@@ -262,13 +294,43 @@ header{
     gap:50px;
 }
 
+.modelo-card:last-child{
+    grid-column:2;
+}
+
 /* TARJETAS */
+
+
+#hello-color{
+    background: #F7CBDD;
+}
+#batman-color{
+    background: #F2D049;
+}
+#snoopy-color{
+    background: #E35656;
+}
+#jp-color{
+    background: #88A685;
+}
+
+#amaranta-color{
+    background: #C9ABD4;
+}
+#corazon-color{
+    background: #F57685;
+}
+#panda-color{
+    background: #F5F2F2;
+}
+
+
 
 .modelo-card{
 
-    background:#dddddd;
+    background:#C9ABD4;
 
-    border-radius:35px;
+    border-radius:35px; 
 
     overflow:hidden;
 
@@ -305,6 +367,25 @@ header{
     font-weight:700;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Animación */
 
 @keyframes palpitarRayo{
@@ -331,31 +412,6 @@ header{
 
     transition:.3s;
 }
-
-
-/* ===================================
-   FOOTER
-=================================== */
-
-footer{
-
-    background:#9cab91;
-
-    text-align:center;
-
-    padding:28px 20px;
-
-    font-size:2rem;
-
-    font-weight:700;
-}
-
-footer span{
-
-    color:white;
-}
-
-
 
 
 
@@ -442,7 +498,7 @@ footer span{
     }
 
     .logo-container a{
-        font-size:2rem;
+        font-size:3.3rem;
     }
 
     .titulo{
@@ -467,6 +523,10 @@ footer span{
         padding:14px 35px;
     }
 
+    footer{
+
+        font-size:1.2rem;
+    }
 
 
 /* LAPICES LATERALES MAS PEQUEÑOS */
@@ -502,13 +562,35 @@ footer span{
 
     .titulo{
 
-        font-size:2.5rem;
+        font-size:3.9rem;
 
-        line-height:1.1;
+        line-height:1.2;
 
         padding:0 30px;
 
     }
+
+    .naranja{
+    color:#f1732c;
+    font-family:"PortaFuente", cursive;
+    font-size:5.2rem;
+}
+
+    .azul{
+    color:#73add8;
+    font-family:"PortaFuente", cursive;
+    font-size:5.2rem;
+}
+
+    .morado{
+    color:#B777BD;
+    font-family:"PortaFuente", cursive;
+    font-size:5.2rem;
+}
+
+
+
+
 
 
     .btn-comenzar{
@@ -525,7 +607,7 @@ footer span{
 
     #modelos{
 
-        padding:80px 30px;
+        padding:150px 30px 80px;
 
     }
 
@@ -595,6 +677,103 @@ footer span{
 
 
 
+
+
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background-image:url('img/footer.png');
+
+    background-size:100% auto;
+
+    background-position:center bottom;
+
+    background-repeat:no-repeat;
+
+    min-height:600px;
+
+    height:250px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+
+    padding-bottom:35px;
+
+
+    text-align:center;
+
+    font-size:2rem;
+
+    font-weight:400;
+
+    color:black;
+
+
+}
+
+
+
+/* TEXTO BLANCO DE ABAJO */
+
+footer span{
+
+    display:block;
+
+    color:white;
+
+    font-size:3rem;
+
+    font-weight:800;
+
+}
+
+
+
+
+
+/* ==========================================
+   FOOTER CELULAR
+========================================== */
+
+@media(max-width:600px){
+
+footer{
+
+    background-image:url('img/footer-cel.png');
+
+    background-size:100% auto;
+
+    min-height:260px;
+
+    background-position:center bottom;
+
+    padding-bottom:20px;
+
+    font-size:0.9rem;
+
+}
+
+
+
+footer span{
+
+    font-size:1.6rem;
+
+}
+
+}
 
 
 
@@ -722,7 +901,7 @@ footer span{
 
         <img src="img/logo.png" alt="Logo">
 
-        <a href="index.html">Porta LapiCel</a>
+        <a href="index.html">Porta Lapicel</a>
 
     </div>
 
@@ -743,8 +922,8 @@ footer span{
 
         <br>
 
-        <span class="rosafuerte">Porta</span>
-        <span class="naranja">Lapi</span><span class="azul">Cel</span>
+        <span class="morado">Porta</span>
+        <span class="naranja">Lapi</span><span class="azul">cel</span>
 
     </h1>
 
@@ -772,35 +951,41 @@ footer span{
 
     <div class="contenedor-modelos">
 
-        <a href="rayo1.html" class="modelo-card">
+        <a href="Hello-Kitty.html" class="modelo-card" id="hello-color">
             <img src="img/rayo1.jpg" alt="">
-            <h3>Rayo 1</h3>
+            <h3>Hello Kitty</h3>
         </a>
 
-        <a href="rayo2.html" class="modelo-card">
+        <a href="Batman.html" class="modelo-card" id="batman-color">
             <img src="img/rayo2.jpg" alt="">
-            <h3>Rayo 2</h3>
+            <h3>Batman</h3>
         </a>
 
-        <a href="rayo3.html" class="modelo-card">
+        <a href="Snoopy.html" class="modelo-card" id="snoopy-color">
             <img src="img/rayo3.jpg" alt="">
-            <h3>Rayo 3</h3>
+            <h3>Snoopy</h3>
         </a>
 
-        <a href="rayo4.html" class="modelo-card">
+        <a href="JPII.html" class="modelo-card" id="jp-color">
             <img src="img/rayo4.jpg" alt="">
-            <h3>Rayo 4</h3>
+            <h3>Pedagógico JPII</h3>
         </a>
 
-        <a href="rayo5.html" class="modelo-card">
+        <a href="Amaranta.html" class="modelo-card" id="amaranta-color">
             <img src="img/rayo5.jpg" alt="">
-            <h3>Rayo 5</h3>
+            <h3>Amaranta</h3>
         </a>
 
-        <a href="rayo6.html" class="modelo-card">
+        <a href="Corazones.html" class="modelo-card" id="corazon-color">
             <img src="img/rayo6.jpg" alt="">
-            <h3>Rayo 6</h3>
+            <h3>Corazones</h3>
         </a>
+
+        <a href="Panditas.html" class="modelo-card" id="panda-color">
+            <img src="img/rayo7.jpg" alt="">
+            <h3>Panditas</h3>
+        </a>
+
 
     </div>
 
@@ -812,8 +997,7 @@ footer span{
 
 <footer>
 
-    Nos reservamos los derechos de autor
-
+    <h3>Nos reservamos los derechos de autor</h3> 
     <span>Los Audaces</span>
 
 </footer>
@@ -869,13 +1053,13 @@ window.addEventListener('scroll',function(){
     if(window.scrollY > 50){
 
         header.style.padding = "5px 30px";
-        header.style.background = "rgba(232, 223, 204)";
+        header.style.background = "rgba(235, 227, 209)";
         header.style.boxShadow = "0 8px 25px rgba(0,0,0,.15)";
 
     }else{
 
         header.style.padding = "10px 30px";
-        header.style.background = "rgba(242, 232, 213)";
+        header.style.background = "rgba(242, 234, 208)";
         header.style.boxShadow = "0 2px 15px rgba(0,0,0,.08)";
 
     }
