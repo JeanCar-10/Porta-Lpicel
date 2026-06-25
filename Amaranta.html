@@ -1,0 +1,3856 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Amaranta | LapiCels</title>
+
+<link rel="icon" type="image/png" href="img/logo.png">
+
+<!-- =========================
+     FUENTES
+========================= -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+
+
+<!-- =========================
+    =========================
+========================= 
+========================= 
+=========================
+
+     Comienza ESTILOS
+
+=========================
+========================= 
+========================= 
+=========================  -->
+
+
+
+<style>
+
+@font-face{
+
+    font-family:"PortaFuente";
+
+    src:url("fonts/ClickerScript-Regular.ttf") format("truetype");
+
+    font-weight:normal;
+
+    font-style:normal;
+
+}
+
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+
+body{
+
+font-family:'Baloo 2', cursive;
+
+background:#efefef;
+
+display:flex;
+
+flex-direction:column;
+
+overflow-x:hidden;
+
+width:100%;
+
+}
+
+
+/* ===================================================
+   HEADER
+=================================================== */
+header{
+
+width:100%;
+
+background:rgba(242,234,208);
+
+backdrop-filter:blur(8px);
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+padding:10px 30px;
+
+z-index:99999;
+
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+transition:all .35s ease;
+
+}
+
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo-container img{
+    width:50px;
+    height:auto;
+}
+
+.logo-container a{
+    text-decoration:none;
+    color:#5C5C43;
+    font-size:40px;
+    font-family:"PortaFuente", cursive;
+    font-weight:700;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+header{
+
+padding:8px 18px;
+
+}
+
+
+
+.logo-container{
+
+gap:10px;
+
+}
+
+
+
+.logo-container img{
+
+width:38px;
+
+}
+
+
+
+.logo-container a{
+
+font-size:2rem;
+
+}
+
+
+}
+
+/* ==========================================
+   CONTENIDO VACÍO
+========================================== */
+
+main{
+    flex:1;
+    margin-top:0px;
+    padding-top:70px;
+}
+
+
+
+@media(max-width:700px){
+
+main{
+    padding-top:65px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+
+   PORTADA SNOOPY
+
+==========================================
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================  */
+
+.portada{
+
+    text-align:center;
+    padding:20px 25px;
+    background:#F2EEFA; /* fondo de portada */
+
+}
+
+
+.imagen-portada{
+
+    width:100%;
+    max-width:420px;
+    height:360px;
+    object-fit:cover;
+    border-radius:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+.portada h1{
+
+    margin-top:35px;
+    font-size:3rem;
+    line-height:1.2;
+    color:#026159; /* titulo arriba portada */
+
+}
+
+
+.portada h1 span{
+
+    color:#B32A3C; /* titulo abajo portada */
+    display:block;
+
+}
+
+
+.portada p{
+
+    margin-top:20px;
+    font-size:1.3rem;
+    color:#4f4f4f;
+    line-height:1.5;
+
+}
+
+
+/* ==========================================
+   PORTADA PC HORIZONTAL
+========================================== */
+
+@media(min-width:1000px){
+
+.portada{
+
+padding:120px 80px 60px;
+
+}
+
+.portada-contenedor{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:80px;
+max-width:1400px;
+margin:auto;
+
+}
+
+.portada-imagen{
+
+width:50%;
+
+}
+
+.imagen-portada{
+
+width:100%;
+height:600px;
+max-width:none;
+object-fit:cover;
+border-radius:45px;
+
+}
+
+.portada-info{
+
+width:50%;
+text-align:left;
+
+}
+
+.portada h1{
+
+font-size:4rem;
+margin-top:0;
+
+}
+
+.portada p{
+
+font-size:1.5rem;
+
+}
+
+.portada .boton{
+
+font-size:1.5rem;
+padding:18px 50px;
+
+}
+
+}
+
+
+
+/* ==========================================
+   PORTADA EN CELULAR
+========================================== */
+
+@media(max-width:768px){
+
+.portada{
+padding:50px 20px;
+}
+
+.imagen-portada{
+height:300px;
+}
+
+.portada h1{
+font-size:2.5rem;
+}
+
+.portada p{
+font-size:1.1rem;
+}
+
+}
+
+
+
+/* ==========================================
+   BOTÓN SNOOPY
+========================================== */
+
+.boton{
+
+display:inline-block;
+margin-top:35px;
+
+background:#DB359D; /* boton portada */
+color:white;
+
+padding:15px 40px;
+border-radius:40px;
+
+text-decoration:none;
+font-size:1.5rem;
+font-weight:bold;
+
+transition:.3s;
+
+animation:palpitarSnoopy 2.5s infinite;
+
+box-shadow:0 8px 20px rgba(233,107,107,.35);
+
+}
+
+
+
+.boton:hover{
+
+transform:scale(1.08);
+background:#DEB035; /* boton portada */
+animation:none;
+
+}
+
+
+
+/* ==========================================
+   ANIMACIÓN SNOOPY
+========================================== */
+
+@keyframes palpitarSnoopy{
+
+0%{
+transform:scale(1);
+box-shadow:0 0 0 0 rgba(233,107,107,0.5);
+}
+
+70%{
+transform:scale(1.08);
+box-shadow:0 0 0 20px rgba(233,107,107,0);
+}
+
+100%{
+transform:scale(1);
+box-shadow:0 0 0 0 rgba(233,107,107,0);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+
+   SECCIÓN MATERIALES SNOOPY
+
+==========================================
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= */
+
+
+
+
+
+
+.materiales{
+
+    padding:170px 40px;
+    text-align:center;
+    background:#F2EEFA; /* fondo materiales */
+
+}
+
+
+
+.materiales h2{
+
+    font-size:3.2rem;
+    color:#026159; /* titulo materiales  */
+
+}
+
+
+
+.subtitulo{
+
+    margin-top:10px;
+    font-size:1.3rem;
+    color:#4f4f4f;
+
+}
+
+
+
+/* ==========================================
+   CONTENEDOR TARJETAS
+========================================== */
+
+.contenedor-materiales{
+
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(4, 260px);
+    justify-content:center;
+    gap:35px;
+
+}
+
+
+
+/* ==========================================
+   TARJETAS
+========================================== */
+
+.tarjeta-material{
+
+    background:#FAF8FF; /* fondo tarjemate */
+    border-radius:25px;
+
+    overflow:hidden;
+    padding-bottom:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+    cursor:pointer;
+
+    -webkit-tap-highlight-color:transparent;
+    user-select:none;
+    -webkit-user-select:none;
+
+    border:2px solid rgba(148,122,207,.25) /* bordes materiales  */
+
+}
+
+
+
+/* HOVER SOLO PC */
+
+@media(min-width:700px){
+
+.tarjeta-material:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(148,122,207,.25);   /* sombra materiales   */
+    border-color: #947ACF;                      /* bordes materiales  */
+
+}
+
+}
+
+
+
+/* ==========================================
+   IMAGEN
+========================================== */
+
+.tarjeta-material img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    pointer-events:none;
+
+}
+
+
+
+/* ==========================================
+   TITULO
+========================================== */
+
+.tarjeta-material h3{
+
+    margin-top:20px;
+    font-size:1.8rem;
+    color:#947ACF; /* nombre materiales  */
+
+}
+
+
+
+/* ==========================================
+   TEXTO
+========================================== */
+
+.tarjeta-material p{
+
+    padding:0 20px;
+    color:#555;
+    font-size:1.1rem;
+    line-height:1.4;
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE TABLET
+========================================== */
+
+@media(max-width:1100px){
+
+.contenedor-materiales{
+    grid-template-columns:repeat(2,260px);
+}
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE CELULAR
+========================================== */
+
+@media(max-width:600px){
+
+.materiales{
+    padding:130px 30px;
+}
+
+.materiales h2{
+    font-size:2.5rem;
+}
+
+.contenedor-materiales{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.tarjeta-material{
+    width:100%;
+    max-width:350px;
+    margin:auto;
+}
+
+.tarjeta-material img{
+    height:230px;
+}
+
+}
+
+
+
+
+
+
+
+/* BOTÓN MATERIAL */
+
+.archivo-des-mat a{
+
+margin:20px 50px;
+
+display:flex;
+flex-direction:column;
+
+gap:10px;
+
+background:#DB359D;   /* boton materiales */
+
+color:white;
+
+padding:10px 10px;
+
+border-radius:25px;
+
+font-weight:bold;
+
+white-space:nowrap;
+
+transition:.3s;
+
+text-decoration:none;
+
+}
+
+
+
+.archivo-des-mat a:hover{
+
+transform:scale(1.05);
+background:#DEB035;    /*boton materiales  */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+  ==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+========================================== 
+
+
+
+
+
+   PASOS
+
+
+
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+========================================== */
+
+
+
+
+
+
+
+/* ==========================================
+   SECCIÓN PASOS SNOOPY
+========================================== */
+
+.pasos{
+
+padding:20px 15px;
+text-align:center;
+background:#F2EEFA; /* fondo pasosy */
+scroll-margin-top:60px;
+position:relative;
+
+}
+
+
+
+.pasos::before{
+
+content:"";
+display:block;
+height:70px;
+margin-top:-20px;
+visibility:hidden;
+pointer-events:none;
+
+}
+
+
+
+.pasos h2{
+
+font-size:4rem;
+color:#026159; /* titulo pasos*/
+margin-bottom:30px;
+font-weight:800;
+
+}
+
+
+
+/* ==========================================
+   TARJETA PASO PC GRANDE
+========================================== */
+
+.paso-card{
+
+width:90%;
+max-width:1400px;
+margin:50px auto;
+
+background:#FAF8FF; /* fondo tarjepasos */
+
+border-radius:40px;
+
+overflow:hidden;
+
+display:flex;
+align-items:center;
+
+padding:40px;
+gap:60px;
+
+box-shadow:0 15px 35px rgba(148,122,207,.25);   /*   sombra pasos   */
+
+border:1px solid #947ACF;               /*   bordes pasos   */
+
+}
+
+
+
+/* FOTO GRANDE IZQUIERDA */
+
+.paso-card img{
+
+width:55%;
+height:600px;
+object-fit:cover;
+border-radius:35px;
+cursor:pointer;
+
+}
+
+
+
+/* INFORMACIÓN DERECHA */
+
+.paso-info{
+
+display:flex;
+flex-direction:column;
+
+}
+
+
+
+.paso-info h3{
+
+font-size:3.5rem;
+color:#026159;      /* nombre pasos */
+line-height:1;
+padding:20px 0;
+
+}
+
+
+
+.paso-info p{
+
+font-size:2rem;
+color:#4f4f4f;
+line-height:1.4;
+
+}
+
+
+
+
+/* ==========================================
+   QUITAR CUADRO CELESTE AL TOCAR PASOS
+========================================== */
+
+
+.paso-card{
+
+    -webkit-tap-highlight-color:transparent;
+
+    user-select:none;
+
+    -webkit-user-select:none;
+
+}
+
+
+
+.paso-card img{
+
+    -webkit-tap-highlight-color:transparent;
+
+    user-select:none;
+
+    -webkit-user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   CONSEJO
+========================================== */
+
+.consejo{
+
+margin-top:35px;
+
+background:#E6E1F2;     /*  fondo consejos  */
+
+padding:25px;
+
+border-radius:25px;
+
+font-size:1.5rem;
+
+border-left:6px solid #947ACF;  /*  decoracion conse    */
+
+}
+
+
+
+/* ==========================================
+   ARCHIVO DESCARGABLE
+========================================== */
+
+.archivo-descarga{
+
+margin-top:25px;
+
+background:#E6E1F2;     /*  fondo consejos  */
+
+padding:15px 20px;
+
+border-radius:20px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+width:100%;
+
+font-size:1.1rem;
+
+box-shadow:0 8px 20px rgba(148,122,207,.25));  /*  sombra consejos  */
+
+border:1px solid #947ACF;   /*  border consejos  */
+
+}
+
+
+
+.archivo-descarga span{
+
+color:#555;
+font-weight:600;
+
+}
+
+
+
+.archivo-descarga a{
+
+background:#DB359D;         /* boton pasos */
+color:white;
+
+text-decoration:none;
+
+padding:10px 15px;
+
+border-radius:25px;
+
+font-weight:bold;
+
+font-size: 12px;
+
+white-space:nowrap;
+
+transition:.3s;
+
+}
+
+
+
+.archivo-descarga a:hover{  
+
+transform:scale(1.05);
+background:#DEB035;         /* boton pasos */
+
+}
+
+
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:1000px){
+
+.paso-card{
+width:90%;
+gap:30px;
+}
+
+.paso-card img{
+height:450px;
+}
+
+}
+
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media(max-width:700px){
+
+.pasos::before{
+height:70px;
+margin-top:-90px;
+}
+
+.pasos h2{
+font-size:2.6rem;
+}
+
+.paso-card{
+width:90%;
+display:flex;
+flex-direction:column;
+padding:0;
+gap:0;
+}
+
+.paso-card img{
+width:100%;
+height:280px;
+border-radius:0;
+}
+
+.paso-info{
+padding:25px;
+text-align:center;
+}
+
+.paso-info h3{
+font-size:2rem;
+}
+
+.paso-info p{
+font-size:1.2rem;
+}
+
+.consejo{
+font-size:1rem;
+}
+
+}
+
+
+
+/* ==========================================
+   VISOR FULLSCREEN
+========================================== */
+
+.visor{
+
+display:none;
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.90);
+
+z-index:999999;
+
+align-items:center;
+justify-content:center;
+
+overflow:hidden;
+
+}
+
+
+
+.visor button{
+
+position:absolute;
+
+top:25px;
+right:30px;
+
+background:#DB359D;     /*  boton cerrar    */
+border:none;
+
+color:white;
+font-size:28px;
+
+width:50px;
+height:50px;
+
+border-radius:50%;
+
+cursor:pointer;
+
+}
+
+
+
+.imagen-zoom{
+
+max-width:95%;
+max-height:95%;
+
+object-fit:contain;
+
+border-radius:20px;
+
+cursor:grab;
+
+transition:transform .2s ease;
+
+touch-action:none;
+
+user-select:none;
+-webkit-user-drag:none;
+
+pointer-events:auto;
+
+}
+
+
+
+.imagen-zoom:active{
+cursor:grabbing;
+}
+
+
+
+/* ==========================================
+   BOTONES PASOS
+========================================== */
+
+.navegacion-pasos{
+
+position:absolute;
+right:20px;
+top:50%;
+transform:translateY(-50%);
+
+display:flex;
+flex-direction:column;
+gap:8px;
+
+z-index:10;
+
+}
+
+
+
+.btn-paso{
+
+background:#DB359D;     /*  boton laterales     */
+color:white;
+
+text-decoration:none;
+
+width:65px;
+height:150px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:25px;
+
+font-size:1.1rem;
+font-weight:bold;
+
+box-shadow:0 8px 18px rgba(217,48,48,.35);      /* sombras lateral  */
+
+writing-mode:vertical-rl;
+transform:rotate(180deg);
+
+transition:.3s;
+
+}
+
+
+
+.btn-paso:hover{
+
+background:#DEB035;     /*  boton laterales     */
+transform:rotate(180deg) scale(1.08);
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE CELULAR BOTONES
+========================================== */
+
+@media(max-width:700px){
+
+.navegacion-pasos{
+
+position:relative;
+right:auto;
+top:auto;
+transform:none;
+
+width:100%;
+
+display:flex;
+flex-direction:row;
+justify-content:center;
+
+gap:15px;
+
+margin-top:40px;
+
+}
+
+.btn-paso{
+
+writing-mode:horizontal-tb;
+transform:none;
+
+width:45%;
+height:60px;
+
+border-radius:30px;
+
+font-size:1.2rem;
+
+}
+
+.btn-paso:hover{
+transform:scale(1.05);
+}
+
+.btn-paso.volver{
+font-size:0;
+}
+
+.btn-paso.volver::after{
+content:"⇠ Volvamos";
+font-size:1.2rem;
+}
+
+.btn-paso.avanzar{
+font-size:0;
+}
+
+.btn-paso.avanzar::after{
+content:"Vamos ⇢";
+font-size:1.2rem;
+}
+
+.btn-paso.avanzar2{
+font-size:0;
+}
+
+.btn-paso.avanzar2::after{
+content:"Terminar ⇢";
+font-size:1.2rem;
+}
+
+}
+
+
+
+
+/* ==========================================
+==========================================
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+==========================================
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+
+             PARTE FINAAAL
+
+==========================================
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+==========================================    
+==========================================
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+==========================================  */
+
+
+
+
+/* ==========================================
+   BLOQUEAR DESPLAZAMIENTO LATERAL
+========================================== */
+
+html, body{
+
+width:100%;
+max-width:100%;
+overflow-x:hidden;
+
+}
+
+*{
+box-sizing:border-box;
+}
+
+img{
+max-width:100%;
+}
+
+
+
+/* ==========================================
+   RESULTADO FINAL SNOOPY
+========================================== */
+
+.resultado-final{
+
+background:#F2EEFA; /* fondo pasos*/
+
+padding:120px 20px 20px 20px;
+
+text-align:center;
+
+}
+
+
+
+/* TITULO */
+
+.resultado-final h2{
+
+font-size:4rem;
+color:#026159; /* titulo pasose */
+
+margin-bottom:40px;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+.resultado-final h2{
+
+font-size:2.2rem;
+
+margin-bottom:40px;
+
+}
+
+}
+
+
+
+/* ==========================================
+   CARRUSEL FINAL
+========================================== */
+
+.carrusel-final{
+
+width:100%;
+overflow:hidden;
+margin:40px auto;
+
+}
+
+.carrusel-track{
+
+display:flex;
+gap:35px;
+
+width:max-content;
+
+animation:moverFotos 45s linear infinite;
+
+}
+
+.carrusel-track img{
+
+width:650px;
+height:500px;
+
+object-fit:cover;
+
+border-radius:35px;
+
+}
+
+@keyframes moverFotos{
+
+from{
+transform:translateX(0);
+}
+
+to{
+transform:translateX(-50%);
+}
+
+}
+
+
+
+/* CELULAR */
+
+@media(max-width:700px){
+
+.carrusel-track{
+gap:20px;
+}
+
+.carrusel-track img{
+
+width:300px;
+height:260px;
+
+border-radius:25px;
+
+}
+
+}
+
+
+
+/* ==========================================
+   TEXTO FINAL
+========================================== */
+
+.resultado-texto{
+
+font-size:2rem;
+color:#4f4f4f;
+
+margin:35px 0;
+
+}
+
+
+
+/* ==========================================
+   BOTONES
+========================================== */
+
+.resultado-botones{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+
+margin-bottom:40px;
+
+}
+
+
+
+/* BOTÓN CONFETI */
+
+.resultado-botones button{
+
+background:#DB359D; /* boton felicidades */
+
+border:none;
+
+padding:0 35px;
+
+height:60px;
+
+border-radius:40px;
+
+font-size:1.3rem;
+
+font-weight:bold;
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+.resultado-botones button:hover{
+
+background:#DEB035;         /* boton felicidades     */
+transform:scale(1.05);
+
+}
+
+
+
+/* BOTÓN AZUL (CAMBIADO A SNOOPY) */
+
+.btn-azul{
+
+background:#b9e4c9; /* verde suave */
+
+color:#3C8260;
+
+padding:18px 35px;
+
+border-radius:40px;
+
+font-size:1.3rem;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+height:60px;
+
+}
+
+.btn-azul:hover{
+
+transform:scale(1.05);
+background:#8fd3a7;
+
+}
+
+
+
+/* ==========================================
+   MENSAJE FINAL
+========================================== */
+
+.final-box{
+
+text-align:center;
+padding:50px 20px;
+
+}
+
+.final-box button{
+
+background:#f6a5a5;
+
+border:none;
+
+padding:18px 35px;
+
+border-radius:40px;
+
+font-size:1.5rem;
+
+font-weight:700;
+
+color:white;
+
+cursor:pointer;
+
+box-shadow:0 8px 20px rgba(233,107,107,.3);
+
+}
+
+.mensaje-contenedor{
+
+height:60px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+#mensaje-final{
+
+display:none;
+
+margin-top:30px;
+
+font-size:2.5rem;
+font-weight:800;
+
+color:#DEB035;          /*  mensaje felici     */
+
+animation:aparecer .6s ease;
+
+}
+
+@keyframes aparecer{
+
+from{
+transform:scale(.5);
+opacity:0;
+}
+
+to{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+
+
+/* RESPONSIVE FINAL */
+
+@media(max-width:700px){
+
+#mensaje-final{
+font-size:1.8rem;
+padding:0 20px;
+}
+
+.resultado-botones{
+flex-direction:column;
+gap:20px;
+}
+
+.resultado-botones button,
+.btn-azul{
+width:260px;
+}
+
+}
+
+
+
+/* ==========================================
+   ELIMINAR TOQUES AZULES
+========================================== */
+
+button,
+a,
+.btn-azul,
+.archivo-des-mat,
+.resultado-botones button,
+.final-box button{
+
+-webkit-tap-highlight-color: transparent;
+outline: none;
+text-decoration: none;
+
+}
+
+button:focus,
+a:focus{
+outline:none;
+}
+
+
+
+/* ==========================================
+   FOOTER SNOOPY
+========================================== */
+
+footer{
+
+background-color:#F2EEFA;       /*      fondo footer    */
+
+background-image:url('img/footer.png');
+
+background-size:100% auto;
+
+background-position:center bottom;
+
+background-repeat:no-repeat;
+
+min-height:600px;
+height:182px;
+
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+align-items:center;
+
+padding-bottom:35px;
+
+text-align:center;
+
+font-size:2rem;
+
+font-weight:400;
+
+color:#2f3d2f;
+
+}
+
+
+
+/* TEXTO FINAL */
+
+footer span{
+
+display:block;
+
+color:#fff;
+
+font-size:3rem;
+
+font-weight:800;
+
+}
+
+
+
+/* FOOTER CELULAR */
+
+@media(max-width:600px){
+
+footer{
+
+background-image:url('img/footer-cel.png');
+
+background-size:100% auto;
+
+min-height:0px;
+
+background-position:center bottom;
+
+padding-bottom:20px;
+
+font-size:0.9rem;
+
+}
+
+footer span{
+
+font-size:1.6rem;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+
+
+
+
+
+
+<!-- ==========================================
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+
+
+     CONTENIDOOOOOOOOS
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=============================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+
+========================================== -->
+
+<body>
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header>
+
+    <div class="logo-container">
+
+        <img src="img/logo.png" alt="Logo">
+
+        <a href="index.html">Porta Lapicel</a>
+
+    </div>
+
+</header>
+
+<main>
+
+
+
+
+<!-- ==========================================
+  ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+     PORTADA DEL PROYECTO
+
+==========================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+ -->
+
+<section class="portada">
+
+  <div class="portada-contenedor">
+
+    <div class="portada-imagen">
+
+      <img 
+      src="img-amaranta/final1.jpg" 
+      alt="Porta Lapicel terminado"
+      class="imagen-portada">
+
+    </div>
+
+    <div class="portada-info">
+
+      <h1>
+      Crea tu propio 
+      <span>Porta Lapicel</span> ✏️
+      </h1>
+
+      <p>
+      Transforma materiales simples en una creación
+      única, creativa y útil para organizar tus lápices.
+      </p>
+
+      <a href="#materiales" class="boton">
+      Comencemos!! 🚀
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- ==========================================
+  ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+  
+
+     SECCIÓN MATERIALES
+
+==========================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+======================================= -->
+
+<section id="materiales" class="materiales">
+
+  <h2>
+  🧰 Materiales
+  </h2>
+
+  <p class="subtitulo">
+  Estos son todos los materiales que necesitaremos para armar este hermoso PortaLapicel <:
+  </p>
+
+  <div class="contenedor-materiales">
+
+  <!-- ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 1 
+
+  ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================-->
+
+  <div class="tarjeta-material">
+
+  <img src="img-amaranta/materiales-1.jpg" alt="Chapitas">
+
+  <h3>
+  Palitos baja lengua
+  </h3>
+
+  <p>
+  De los colores que se aprecian en la imagen 🌈
+  </p>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 2
+
+  ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-amaranta/materiales-2.jpg" alt="Palitos">
+
+  <h3>
+  Cartón
+  </h3>
+
+  <p>
+El cartón mide 23 cm de largo, con una base de 9 cm de ancho y un espaldar de 11 cm de alto. Se utiliza como soporte principal del PortaLápices, aportando firmeza y estabilidad a toda la estructura.
+  </p>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 3 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-amaranta/materiales-3.jpg" alt="Fideos">
+
+  <h3>
+  Cajas de jarabes
+  </h3>
+
+  <p>
+  Se utilizan para formar partes de la estructura del PortaCelular y el PortaLápices. Al recortarlas en diferentes medidas, sirven como base y soporte, aportando firmeza y volumen al proyecto
+  </p>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 4 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-amaranta/materiales-4.jpg" alt="Pinturas">
+
+  <h3>
+  Témperas
+  </h3>
+
+  <p>
+  De preferencia en tonos lila y morado, se utilizan para pintar y decorar la estructura del PortaLápices y PortaCelular, aportando color y un acabado atractivo.
+  </p>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 5 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-amaranta/materiales-5.jpg" alt="Pinturas">
+
+  <h3>
+  Pegamento
+  </h3>
+
+  <p>
+  De preferencia uno fuerte, se utiliza para unir todas las piezas del PortaCelular y PortaLápices, asegurando firmeza y estabilidad en la estructura.
+  </p>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 6 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-amaranta/materiales-6.jpg" alt="Pinturas">
+
+  <h3>
+  Materiales esenciales
+  </h3>
+
+  <p>
+  Incluyen la tijera, la regla, el lápiz y otros implementos básicos necesarios para medir, marcar y cortar con precisión. Estos materiales son indispensables para lograr un acabado prolijo y mantener la estructura firme del PortaLápices y PortaCelular.
+  </p>
+
+  </div>
+
+  <!--
+  ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 7 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-amaranta/materiales-7.jpg" alt="Pinturas">
+
+  <h3>
+  Florcitas de tela
+  </h3>
+
+  <p>
+  Se pueden elaborar manualmente siguiendo un video de Pinterest o comprarlas ya hechas. Sirven como elementos decorativos para dar un toque alegre y personalizado al PortaLápices y PortaCelular. 🌸✨
+  </p>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 8 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+    <img src="img-amaranta/materiales-8.jpg" alt="Pinturas">
+
+    <h3>
+    Pegatinas Amaranta
+    </h3>
+
+    <div class="archivo-des-mat">
+
+        <a href="img-amaranta/Amaranta-pegatina.pdf" target="_blank" download="Amaranta-pegatina.pdf">
+        ⬇ Descargar PDF
+        </a>
+
+    </div>
+
+  </div>
+
+
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ==========================================
+    ==========================================
+    ==========================================
+    ==========================================
+        ==========================================
+    ==========================================
+    ==========================================
+        ==========================================
+    ==========================================
+    ==========================================
+     PASO 1
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+    ==========================================
+    ==========================================
+    ==========================================
+        ==========================================
+    ==========================================
+    ========================================== -->
+
+
+
+<section class="pasos" id="paso1">
+
+<h2>
+Comencemos!!✨
+</h2>
+
+<div class="paso-card">
+
+<img 
+src="img-amaranta/pasos-1.jpg"
+alt="Paso 1"
+onclick="abrirPaso('img-amaranta/pasos-1.jpg')"
+>
+
+<div class="paso-info">
+
+<h3>
+📌 Paso 1: Cortar las puntas
+</h3>
+
+<p>
+Corta las puntas de los palitos baja lengua, tal como se aprecia en la imagen.
+Este paso sirve para darles una forma más uniforme y estética antes de comenzar el armado.
+</p>
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Usa una tijera filuda o un cúter con cuidado, apoyando los palitos sobre una superficie firme. Así evitas que se astillen y logras cortes más prolijos.
+
+</div>
+
+</div>
+</div>
+
+<div class="navegacion-pasos">
+
+<a href="#materiales" class="btn-paso volver">
+Volvamos   ⇢
+</a>
+
+<a href="#paso2" class="btn-paso avanzar">
+⇠   Vamos
+</a>
+
+</div>
+
+<div class="visor" id="visor">
+
+<button onclick="cerrarPaso()">✕</button>
+
+<img 
+src="img-amaranta/pasos-1.jpg"
+class="imagen-zoom"
+id="imagenZoom"
+/>
+
+</div>
+
+</section>
+
+<!-- PASO 2 -->
+
+<section class="pasos" id="paso2">
+
+<div class="paso-card">
+
+<img 
+src="img-amaranta/pasos-2.jpg"
+alt="Paso 2"
+onclick="abrirPaso('img-amaranta/pasos-2.jpg')"
+>
+
+<div class="paso-info">
+
+<h3>
+📌 Paso 2: Repetir el procedimiento 🔄
+</h3>
+
+<p>
+Haz el mismo procedimiento de cortar las puntas con los palitos verdes, tal como se muestra en la imagen.
+Esto asegura que todos los palitos tengan una forma uniforme para el armado.
+</p>
+
+
+</div>
+</div>
+
+<div class="navegacion-pasos">
+
+<a href="#paso1" class="btn-paso volver">
+Volvamos ⇢
+</a>
+
+<a href="#paso3" class="btn-paso avanzar">
+⇠ Vamos
+</a>
+
+</div>
+
+</section>
+
+<div class="visor" id="visor2">
+
+<button onclick="cerrarPaso()">✕</button>
+
+<img 
+src="img-amaranta/pasos-2.jpg"
+class="imagen-zoom"
+id="imagenZoom2"
+/>
+
+</div>
+
+<!-- PASO 3 -->
+
+<section class="pasos" id="paso3">
+
+<div class="paso-card">
+
+<img 
+src="img-amaranta/pasos-3.jpg"
+alt="Paso 3"
+onclick="abrirPaso('img-amaranta/pasos-3.jpg')"
+>
+
+<div class="paso-info">
+
+<h3>
+📌 Paso 3: Medir y cortar 📏✂️
+</h3>
+
+<p>
+Mide 7 cm de largo en los palitos y córtalos con cuidado.
+Este paso permite obtener piezas de tamaño uniforme para el armado.
+</p>
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Marca primero con lápiz la medida antes de cortar, así evitas errores y aseguras que todas las piezas queden iguales.
+
+</div>
+
+</div>
+</div>
+
+<div class="navegacion-pasos">
+
+<a href="#paso2" class="btn-paso volver">
+Volvamos ⇢
+</a>
+
+<a href="#paso4" class="btn-paso avanzar">
+⇠ Vamos
+</a>
+
+</div>
+
+</section>
+
+<div class="visor" id="visor3">
+
+<button onclick="cerrarPaso()">✕</button>
+
+<img 
+src="img-amaranta/pasos-3.jpg"
+class="imagen-zoom"
+id="imagenZoom3"
+/>
+
+</div>
+
+<!-- PASO 4 -->
+
+<section class="pasos" id="paso4">
+
+<div class="paso-card">
+
+<img 
+src="img-amaranta/pasos-4.jpg"
+alt="Paso 4"
+onclick="abrirPaso('img-amaranta/pasos-4.jpg')"
+>
+
+<div class="paso-info">
+
+<h3>
+📌 Paso 4: Preparar el cartón 📦✂️
+</h3>
+
+<p>
+Recortamos un cartón de 23 cm de largo por 9 cm de ancho, la base y la altura del espaldar 11cm 📦✂️, formando la estructura principal del PortaCelular.
+</p>
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Marca la línea de doblez con regla y lápiz antes de doblar, así el pliegue quedará recto y firme.
+
+</div>
+
+</div>
+</div>
+
+<div class="navegacion-pasos">
+
+<a href="#paso3" class="btn-paso volver">
+Volvamos ⇢
+</a>
+
+<a href="#paso5" class="btn-paso avanzar">
+⇠ Vamos
+</a>
+
+</div>
+
+</section>
+
+<div class="visor" id="visor4">
+
+<button onclick="cerrarPaso()">✕</button>
+
+<img 
+src="img-amaranta/pasos-4.jpg"
+class="imagen-zoom"
+id="imagenZoom4"
+/>
+
+</div>
+
+
+
+
+
+<!-- ==========================================
+     PASO 5
+========================================== -->
+
+
+<section class="pasos" id="paso5">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-amaranta/pasos-5.jpg"
+alt="Paso 5"
+onclick="abrirPaso('img-amaranta/pasos-5.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 5: Pintar la estructura 🎨💜
+</h3>
+
+
+<p>
+Pinta el cartón de color lila o del tono que más te agrade.
+Así la base y el espaldar tendrán un acabado decorativo y atractivo.
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso4" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso6" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor5">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-amaranta/pasos-5.jpg"
+class="imagen-zoom"
+id="imagenZoom5"
+>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 6
+========================================== -->
+
+
+<section class="pasos" id="paso6">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-amaranta/pasos-6.jpg"
+alt="Paso 6"
+onclick="abrirPaso('img-amaranta/pasos-6.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 6: Recortar la caja 📦✂️
+</h3>
+
+
+<p>
+De la caja de jarabe, recorta una altura de 5 cm, siguiendo la forma que se aprecia en la imagen.
+Esta pieza servirá como parte de la estructura del PortaCelular.
+</p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso5" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso7" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor6">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-amaranta/pasos-6.jpg"
+class="imagen-zoom"
+id="imagenZoom6"
+>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 7
+========================================== -->
+
+
+<section class="pasos" id="paso7">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-amaranta/pasos-7.jpg"
+alt="Paso 7"
+onclick="abrirPaso('img-amaranta/pasos-7.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 7: Colocar los palitos 🌈
+</h3>
+
+
+<p>
+Coloca alrededor de la caja los palitos baja lengua, intercalando los colores tal como se aprecia en la imagen.
+Esto dará un efecto decorativo llamativo y ordenado.
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+ Alterna bien los tonos para que el diseño se vea equilibrado. Usa pegamento fuerte para que los palitos queden firmes y no se despeguen con el tiempo. ✨🤝
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso6" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso8" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor7">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-amaranta/pasos-7.jpg"
+class="imagen-zoom"
+id="imagenZoom7"
+>
+
+
+</div>
+
+
+
+
+
+<!-- ==========================================
+     PASO 8
+========================================== -->
+
+
+<section class="pasos" id="paso8">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-amaranta/pasos-8.jpg"
+alt="Paso 8"
+onclick="abrirPaso('img-amaranta/pasos-8.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 8: Recortar la segunda caja 📦✂️
+</h3>
+
+
+<p>
+De otra caja de jarabe, recorta una altura de 8 cm, manteniendo la forma de un rectángulo.
+Esta pieza será la base del PortaLápices. ✨🖊️
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Asegúrate de que los bordes queden rectos y firmes; si la caja es muy dura, marca primero con lápiz y regla antes de cortar.
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso7" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso9" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor8">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-amaranta/pasos-8.jpg"
+class="imagen-zoom"
+id="imagenZoom8"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 9
+========================================== -->
+
+
+<section class="pasos" id="paso9">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-amaranta/pasos-9.jpg"
+alt="Paso 9"
+onclick="abrirPaso('img-amaranta/pasos-9.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 9: Decorar con palitos 🌈
+</h3>
+
+
+<p>
+Pega alrededor de la caja los palitos coloridos, intercalando los tonos para mantener la armonía de colores, tal como se aprecia en la imagen.
+Esto dará un acabado alegre y atractivo al PortaLápices. ✨
+</p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso8" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso10" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor9">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-amaranta/pasos-9.jpg"
+class="imagen-zoom"
+id="imagenZoom9"
+>
+
+
+</div>
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 10
+========================================== -->
+
+
+<section class="pasos" id="paso10">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-amaranta/pasos-10.jpg"
+alt="Paso 10"
+onclick="abrirPaso('img-amaranta/pasos-10.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 10: Resultado
+</h3>
+
+
+<p>
+El resultado final debería verse como en la imagen, mostrando la base y el espaldar decorados con los palitos y la caja adaptada como PortaLápices.
+</p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso9" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso11" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor10">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-amaranta/pasos-10.jpg"
+class="imagen-zoom"
+id="imagenZoom10"
+>
+
+
+</div>
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 11
+========================================== -->
+
+
+<section class="pasos" id="paso11">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-amaranta/pasos-11.jpg"
+alt="Paso 11"
+onclick="abrirPaso('img-amaranta/pasos-11.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 11: Decoración final 🌸✨
+</h3>
+
+
+<p>
+Aquí vemos cómo queda nuestro resultado final.
+Podemos decorarlo con pegatinas, florcitas u otros detalles, tal como se aprecia en la imagen, para darle un toque más alegre y personalizado.
+</p>
+
+
+<div class="archivo-descarga">
+
+    <span>
+        Amaranta 🌸
+    </span>
+
+    <a href="img-amaranta/Amaranta-pegatina.pdf" target="_blank" download="Amaranta-pegatina.pdf">
+    ⬇ Descargar PDF
+    </a>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso10" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#final" class="btn-paso avanzar2">
+
+⇠ Terminar
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor11">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-amaranta/pasos-11.jpg"
+class="imagen-zoom"
+id="imagenZoom11"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+    FINAAAAAL 
+
+
+
+
+    --->
+
+
+
+<section class="resultado-final" id="final">
+
+    <h2>⭐Resultado final⭐</h2>
+
+    <!-- 🔥 AQUÍ VA TU FOTO (la misma de portada) -->
+
+    <div class="carrusel-final">
+
+        <div class="carrusel-track">
+
+            <img src="img-amaranta/final1.jpg">
+            <img src="img-amaranta/final2.jpg">
+            <img src="img-amaranta/final3.jpg">
+            <img src="img-amaranta/final4.jpg">
+            <img src="img-amaranta/final5.jpg">
+            <img src="img-amaranta/final6.jpg">
+
+            <!-- repetición para movimiento infinito -->
+
+            <img src="img-amaranta/final1.jpg">
+            <img src="img-amaranta/final2.jpg">
+            <img src="img-amaranta/final3.jpg">
+            <img src="img-amaranta/final4.jpg">
+            <img src="img-amaranta/final5.jpg">
+            <img src="img-amaranta/final6.jpg">
+
+        </div>
+
+    </div>
+
+    <p class="resultado-texto">
+        "¡Tu creación está lista!"
+    </p>
+
+    <div class="resultado-botones">
+
+        <button onclick="felicidades()">
+        🎉 Felicidades
+        </button>
+
+        <a href="index.html#modelos" class="btn-azul">
+        Hagamos más!
+        </a>
+
+    </div>
+
+    <!-- MENSAJE FINAL -->
+
+    <div id="mensaje-final">
+        ¡Felicidades lo lograste! ✨
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+    <h3>Nos reservamos los derechos de autor</h3> 
+    <span>Los Audaces</span>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+// ==========================================
+// ABRIR VISOR (CORREGIDO)
+// ==========================================
+
+function abrirPaso(imagenRuta){
+
+let visores = document.querySelectorAll(".visor");
+let img = document.getElementById("imagenZoom");
+
+// cerrar todos los visores primero
+visores.forEach(v => v.style.display = "none");
+
+// reset zoom
+escala = 1;
+posicionX = 0;
+posicionY = 0;
+
+// reset imagen
+img.style.transform = "translate(0px,0px) scale(1)";
+img.style.transition = "transform .2s ease";
+
+// cambiar imagen
+img.src = imagenRuta;
+
+// mostrar visor principal
+document.getElementById("visor").style.display = "flex";
+
+}
+
+
+// ==========================================
+// CERRAR VISOR (CORREGIDO)
+// ==========================================
+
+function cerrarPaso(){
+
+document.querySelectorAll(".visor").forEach(v => {
+v.style.display = "none";
+});
+
+}
+
+
+
+// ==========================================
+// SCROLL HEADER (CORREGIDO)
+// ==========================================
+
+window.addEventListener('scroll', function(){
+
+const header = document.querySelector('header');
+
+if(window.innerWidth <= 700){
+
+header.style.padding = "10px 30px";
+header.style.background = "rgba(242,234,208)";
+header.style.boxShadow = "0 2px 15px rgba(0,0,0,.08)";
+return;
+
+}
+
+if(window.scrollY > 50){
+
+header.style.padding = "5px 30px";
+header.style.background = "rgba(235, 227, 209)";
+header.style.boxShadow = "0 8px 25px rgba(0,0,0,.15)";
+
+}else{
+
+header.style.padding = "10px 30px";
+header.style.background = "rgba(242, 234, 208)";
+header.style.boxShadow = "0 2px 15px rgba(0,0,0,.08)";
+
+}
+
+});
+
+
+
+// ==========================================
+// BLOQUEAR DRAG IMAGEN
+// ==========================================
+
+const imagen = document.getElementById("imagenZoom");
+
+imagen.addEventListener("dragstart", function(e){
+e.preventDefault();
+});
+
+
+
+// ==========================================
+// ZOOM VARIABLES
+// ==========================================
+
+let escala = 1;
+let posicionX = 0;
+let posicionY = 0;
+
+function actualizarImagen(){
+
+imagen.style.transform =
+`translate(${posicionX}px, ${posicionY}px) scale(${escala})`;
+
+}
+
+
+
+// ==========================================
+// ZOOM MOUSE WHEEL
+// ==========================================
+
+imagen.addEventListener("wheel", function(e){
+
+e.preventDefault();
+
+if(e.deltaY < 0){
+escala += 0.15;
+}else{
+escala -= 0.15;
+}
+
+if(escala < 1) escala = 1;
+if(escala > 3) escala = 3;
+
+actualizarImagen();
+
+});
+
+
+
+// ==========================================
+// TOUCH (MÓVIL)
+// ==========================================
+
+let tocando = false;
+let inicioTouchX = 0;
+let inicioTouchY = 0;
+let distanciaInicial = 0;
+
+imagen.addEventListener("touchstart", function(e){
+
+if(e.touches.length === 2){
+
+distanciaInicial = Math.hypot(
+e.touches[0].clientX - e.touches[1].clientX,
+e.touches[0].clientY - e.touches[1].clientY
+);
+
+}
+
+if(e.touches.length === 1){
+
+tocando = true;
+
+inicioTouchX = e.touches[0].clientX - posicionX;
+inicioTouchY = e.touches[0].clientY - posicionY;
+
+}
+
+});
+
+imagen.addEventListener("touchmove", function(e){
+
+// ZOOM 2 dedos
+if(e.touches.length === 2){
+
+let distanciaActual = Math.hypot(
+e.touches[0].clientX - e.touches[1].clientX,
+e.touches[0].clientY - e.touches[1].clientY
+);
+
+if(distanciaActual > distanciaInicial){
+escala += 0.03;
+}else{
+escala -= 0.03;
+}
+
+if(escala < 1) escala = 1;
+if(escala > 3) escala = 3;
+
+actualizarImagen();
+
+}
+
+// MOVER 1 dedo
+if(tocando && e.touches.length === 1){
+
+posicionX = e.touches[0].clientX - inicioTouchX;
+posicionY = e.touches[0].clientY - inicioTouchY;
+
+actualizarImagen();
+
+}
+
+});
+
+imagen.addEventListener("touchend", function(){
+tocando = false;
+});
+
+
+
+// ==========================================
+// DRAG PC
+// ==========================================
+
+let moviendo = false;
+let inicioX = 0;
+let inicioY = 0;
+
+imagen.addEventListener("mousedown", function(e){
+
+moviendo = true;
+
+inicioX = e.clientX - posicionX;
+inicioY = e.clientY - posicionY;
+
+imagen.style.cursor = "grabbing";
+
+});
+
+document.addEventListener("mousemove", function(e){
+
+if(!moviendo) return;
+
+posicionX = e.clientX - inicioX;
+posicionY = e.clientY - inicioY;
+
+actualizarImagen();
+
+});
+
+document.addEventListener("mouseup", function(){
+
+moviendo = false;
+imagen.style.cursor = "grab";
+
+});
+
+
+
+// ==========================================
+// SCROLL SUAVE
+// ==========================================
+
+document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+
+enlace.addEventListener("click", function(e){
+
+e.preventDefault();
+
+let destino = document.querySelector(this.getAttribute("href"));
+
+destino.scrollIntoView({
+behavior:"smooth",
+block:"start"
+});
+
+});
+
+});
+
+
+
+// ==========================================
+// CONFETI FINAL
+// ==========================================
+
+function felicidades(){
+
+let mensaje = document.getElementById("mensaje-final");
+
+mensaje.style.display = "block";
+mensaje.style.animation = "none";
+mensaje.offsetHeight;
+mensaje.style.animation = "aparecer .6s ease";
+
+for(let i=0;i<80;i++){
+
+let confeti=document.createElement("span");
+
+const emojis = ["🎉", "✨", "🎊", "💖", "⭐"];
+
+confeti.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+
+confeti.style.position="fixed";
+confeti.style.left=Math.random()*100+"vw";
+confeti.style.top="100vh";
+confeti.style.fontSize=(20 + Math.random()*15)+"px";
+confeti.style.zIndex="999999";
+confeti.style.transition=(2 + Math.random()*2)+"s";
+
+document.body.appendChild(confeti);
+
+setTimeout(() => {
+confeti.style.top = "-10vh";
+confeti.style.transform = "translateY(-100vh) rotate(" + Math.random()*360 + "deg)";
+confeti.style.opacity = "0";
+},50);
+
+setTimeout(()=>{
+confeti.remove();
+},3000);
+
+}
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+

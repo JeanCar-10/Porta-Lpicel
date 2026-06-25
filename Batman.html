@@ -1,0 +1,6287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Batman | LapiCels</title>
+
+<link rel="icon" type="image/png" href="img/logo.png">
+
+<!-- =========================
+     FUENTES
+========================= -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+
+
+<!-- =========================
+    =========================
+========================= 
+========================= 
+=========================
+
+     Comienza ESTILOS
+
+=========================
+========================= 
+========================= 
+=========================  -->
+
+
+
+<style>
+
+@font-face{
+
+    font-family:"PortaFuente";
+
+    src:url("fonts/ClickerScript-Regular.ttf") format("truetype");
+
+    font-weight:normal;
+
+    font-style:normal;
+
+}
+
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+
+body{
+
+font-family:'Baloo 2', cursive;
+
+background:#efefef;
+
+display:flex;
+
+flex-direction:column;
+
+overflow-x:hidden;
+
+width:100%;
+
+}
+
+
+/* ===================================================
+   HEADER
+=================================================== */
+header{
+
+width:100%;
+
+background:rgba(242,234,208);
+
+backdrop-filter:blur(8px);
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+padding:10px 30px;
+
+z-index:99999;
+
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+transition:all .35s ease;
+
+}
+
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo-container img{
+    width:50px;
+    height:auto;
+}
+
+.logo-container a{
+    text-decoration:none;
+    color:#5C5C43;
+    font-size:40px;
+    font-family:"PortaFuente", cursive;
+    font-weight:700;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+header{
+
+padding:8px 18px;
+
+}
+
+
+
+.logo-container{
+
+gap:10px;
+
+}
+
+
+
+.logo-container img{
+
+width:38px;
+
+}
+
+
+
+.logo-container a{
+
+font-size:2rem;
+
+}
+
+
+}
+
+/* ==========================================
+   CONTENIDO VACÍO
+========================================== */
+
+main{
+    flex:1;
+    margin-top:0px;
+    padding-top:70px;
+}
+
+
+
+@media(max-width:700px){
+
+main{
+    padding-top:65px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+
+   PORTADA SNOOPY
+
+==========================================
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================  */
+
+.portada{
+
+    text-align:center;
+    padding:20px 25px;
+    background:#242222; /* fondo de portada */
+
+}
+
+
+.imagen-portada{
+
+    width:100%;
+    max-width:420px;
+    height:360px;
+    object-fit:cover;
+    border-radius:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+.portada h1{
+
+    margin-top:35px;
+    font-size:3rem;
+    line-height:1.2;
+    color:#fff; /* titulo arriba portada */
+
+}
+
+
+.portada h1 span{
+
+    color:#FCBD21; /* titulo abajo portada */
+    display:block;
+
+}
+
+
+.portada p{
+
+    margin-top:20px;
+    font-size:1.3rem;
+    color:#D9D7D7;
+    line-height:1.5;
+
+}
+
+
+/* ==========================================
+   PORTADA PC HORIZONTAL
+========================================== */
+
+@media(min-width:1000px){
+
+.portada{
+
+padding:120px 80px 60px;
+
+}
+
+.portada-contenedor{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:80px;
+max-width:1400px;
+margin:auto;
+
+}
+
+.portada-imagen{
+
+width:50%;
+
+}
+
+.imagen-portada{
+
+width:100%;
+height:600px;
+max-width:none;
+object-fit:cover;
+border-radius:45px;
+
+}
+
+.portada-info{
+
+width:50%;
+text-align:left;
+
+}
+
+.portada h1{
+
+font-size:4rem;
+margin-top:0;
+
+}
+
+.portada p{
+
+font-size:1.5rem;
+
+}
+
+.portada .boton{
+
+font-size:1.5rem;
+padding:18px 50px;
+
+}
+
+}
+
+
+
+/* ==========================================
+   PORTADA EN CELULAR
+========================================== */
+
+@media(max-width:768px){
+
+.portada{
+padding:50px 20px;
+}
+
+.imagen-portada{
+height:300px;
+}
+
+.portada h1{
+font-size:2.5rem;
+}
+
+.portada p{
+font-size:1.1rem;
+}
+
+}
+
+
+
+/* ==========================================
+   BOTÓN SNOOPY
+========================================== */
+
+.boton{
+
+display:inline-block;
+margin-top:35px;
+
+background:#FCBD21; /* boton portada */
+color:white;
+
+padding:15px 40px;
+border-radius:40px;
+
+text-decoration:none;
+font-size:1.5rem;
+font-weight:bold;
+
+transition:.3s;
+
+animation:palpitarSnoopy 2.5s infinite;
+
+box-shadow:0 8px 20px rgba(252, 189, 33, 0.75);
+
+}
+
+
+
+.boton:hover{
+
+transform:scale(1.08);
+background:#F7CD63; /* boton portada */
+animation:none;
+
+}
+
+
+
+/* ==========================================
+   ANIMACIÓN SNOOPY
+========================================== */
+
+@keyframes palpitarSnoopy{
+
+0%{
+transform:scale(1);
+box-shadow:0 0 0 0 rgba(252, 189, 33, 0.5);
+}
+
+70%{
+transform:scale(1.08);
+box-shadow:0 0 0 20px rgba(252, 189, 33, 0);
+}
+
+100%{
+transform:scale(1);
+box-shadow:0 0 0 0 rgba(252, 189, 33, 0);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+
+   SECCIÓN MATERIALES SNOOPY
+
+==========================================
+==========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= 
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+========================================= */
+
+
+
+
+
+
+.materiales{
+
+    padding:170px 40px;
+    text-align:center;
+    background:#242222; /* fondo materiales */
+
+}
+
+
+
+.materiales h2{
+
+    font-size:3.2rem;
+    color:#FCBD21; /* titulo materiales  */
+
+}
+
+
+
+.subtitulo{
+
+    margin-top:10px;
+    font-size:1.3rem;
+    color:#D9D7D7;
+
+}
+
+
+
+/* ==========================================
+   CONTENEDOR TARJETAS
+========================================== */
+
+.contenedor-materiales{
+
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(4, 260px);
+    justify-content:center;
+    gap:35px;
+
+}
+
+
+
+/* ==========================================
+   TARJETAS
+========================================== */
+
+.tarjeta-material{
+
+    background:#403E3E; /* fondo tarjemate */
+    border-radius:25px;
+
+    overflow:hidden;
+    padding-bottom:25px;
+
+    box-shadow:0 10px 25px rgba(252, 189, 33, 0.75);
+
+    transition:.35s;
+    cursor:pointer;
+
+    -webkit-tap-highlight-color:transparent;
+    user-select:none;
+    -webkit-user-select:none;
+
+    border:2px solid #FCBD21; /* bordes materiales  */
+
+}
+
+
+
+/* HOVER SOLO PC */
+
+@media(min-width:700px){
+
+.tarjeta-material:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(252, 189, 33, 0.47);   /* sombra materiales   */
+    border-color: #F7CD63;                      /* bordes materiales  */
+
+}
+
+}
+
+
+
+/* ==========================================
+   IMAGEN
+========================================== */
+
+.tarjeta-material img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    pointer-events:none;
+
+}
+
+
+
+/* ==========================================
+   TITULO
+========================================== */
+
+.tarjeta-material h3{
+
+    margin-top:20px;
+    line-height: 30px;
+    font-size:1.8rem;
+    color:#FCBD21; /* nombre materiales  */
+
+}
+
+
+
+/* ==========================================
+   TEXTO
+========================================== */
+
+.tarjeta-material p{
+
+    padding:18px 20px;
+    color:#D9D7D7;
+    font-size:1.1rem;
+    line-height:1.4;
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE TABLET
+========================================== */
+
+@media(max-width:1100px){
+
+.contenedor-materiales{
+    grid-template-columns:repeat(2,260px);
+}
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE CELULAR
+========================================== */
+
+@media(max-width:600px){
+
+.materiales{
+    padding:130px 30px;
+}
+
+.materiales h2{
+    font-size:2.5rem;
+}
+
+.contenedor-materiales{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.tarjeta-material{
+    width:100%;
+    max-width:350px;
+    margin:auto;
+}
+
+.tarjeta-material img{
+    height:230px;
+}
+
+}
+
+
+
+
+
+
+
+/* BOTÓN MATERIAL */
+
+.archivo-des-mat a{
+
+margin:20px 50px;
+
+display:flex;
+flex-direction:column;
+
+gap:10px;
+
+background:#FCBD21;   /* boton materiales */
+
+color:white;
+
+padding:10px 10px;
+
+border-radius:25px;
+
+font-weight:bold;
+
+white-space:nowrap;
+
+transition:.3s;
+
+text-decoration:none;
+
+}
+
+
+
+.archivo-des-mat a:hover{
+
+transform:scale(1.05);
+background:#F7CD63;    /*boton materiales  */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+  ==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+========================================== 
+
+
+
+
+
+   PASOS
+
+
+
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+========================================== */
+
+
+
+
+
+
+
+/* ==========================================
+   SECCIÓN PASOS SNOOPY
+========================================== */
+
+.pasos{
+
+padding:20px 2px;
+text-align:center;
+background:#242222; /* fondo pasosy */
+scroll-margin-top:60px;
+position:relative;
+
+}
+
+
+
+.pasos::before{
+
+content:"";
+display:block;
+height:70px;
+margin-top:-20px;
+visibility:hidden;
+pointer-events:none;
+
+}
+
+
+
+.pasos h2{
+
+font-size:4rem;
+color:#FCBD21; /* titulo pasos*/
+margin-bottom:30px;
+font-weight:800;
+
+}
+
+
+
+/* ==========================================
+   TARJETA PASO PC GRANDE
+========================================== */
+
+.paso-card{
+
+width:90%;
+max-width:1400px;
+margin:50px auto;
+
+background:#403E3E; /* fondo tarjepasos */
+
+border-radius:40px;
+
+overflow:hidden;
+
+display:flex;
+align-items:center;
+
+padding:40px;
+gap:60px;
+
+box-shadow:0 15px 35px rgba(252, 189, 33, 0.75);   /*   sombra pasos   */
+
+border:1px solid #F7CD63;               /*   bordes pasos   */
+
+}
+
+
+
+/* FOTO GRANDE IZQUIERDA */
+
+.paso-card img{
+
+width:55%;
+height:600px;
+object-fit:cover;
+border-radius:35px;
+cursor:pointer;
+
+}
+
+
+
+/* INFORMACIÓN DERECHA */
+
+.paso-info{
+
+display:flex;
+flex-direction:column;
+
+}
+
+
+
+.paso-info h3{
+
+font-size:3.5rem;
+color:#F7CD63;      /* nombre pasos */
+line-height:1;
+padding:20px 0;
+
+}
+
+
+
+.paso-info p{
+
+font-size:2rem;
+color:#D9D7D7;
+line-height:1.4;
+
+}
+
+
+
+
+
+/* ==========================================
+   QUITAR CUADRO CELESTE AL TOCAR PASOS
+========================================== */
+
+
+.paso-card{
+
+    -webkit-tap-highlight-color:transparent;
+
+    user-select:none;
+
+    -webkit-user-select:none;
+
+}
+
+
+
+.paso-card img{
+
+    -webkit-tap-highlight-color:transparent;
+
+    user-select:none;
+
+    -webkit-user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   CONSEJO
+========================================== */
+
+.consejo{
+
+margin-top:35px;
+
+background:#5E5C5B;     /*  fondo consejos  */
+
+color: #DEDCDC;
+
+padding:25px;
+
+border-radius:25px;
+
+font-size:1.5rem;
+
+border-left:6px solid #FCBD21;  /*  decoracion conse    */
+
+}
+
+
+
+/* ==========================================
+   ARCHIVO DESCARGABLE
+========================================== */
+
+.archivo-descarga{
+
+margin-top:25px;
+
+background:#5E5C5B;     /*  fondo consejos  */
+
+padding:15px 20px;
+
+border-radius:20px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+width:100%;
+
+font-size:1.1rem;
+
+box-shadow:0 8px 20px rgba(252, 189, 33, 0.47);  /*  sombra consejos  */
+
+border:1px solid #FCBD21;   /*  border consejos  */
+
+}
+
+
+
+.archivo-descarga span{
+
+color:#DEDCDC;
+font-weight:600;
+
+}
+
+
+
+.archivo-descarga a{
+
+background:#FCBD21;         /* boton pasos */
+color:white;
+
+text-decoration:none;
+
+padding:10px 20px;
+
+border-radius:25px;
+
+font-weight:bold;
+
+white-space:nowrap;
+
+transition:.3s;
+
+}
+
+
+
+.archivo-descarga a:hover{  
+
+transform:scale(1.05);
+background:#F7CD63;         /* boton pasos */
+
+}
+
+
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:1000px){
+
+.paso-card{
+width:90%;
+gap:30px;
+}
+
+.paso-card img{
+height:450px;
+}
+
+}
+
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media(max-width:700px){
+
+.pasos::before{
+height:70px;
+margin-top:-90px;
+}
+
+.pasos h2{
+font-size:2.6rem;
+}
+
+.paso-card{
+width:90%;
+display:flex;
+flex-direction:column;
+padding:0;
+gap:0;
+}
+
+.paso-card img{
+width:100%;
+height:280px;
+border-radius:0;
+}
+
+.paso-info{
+padding:25px;
+text-align:center;
+}
+
+.paso-info h3{
+font-size:2rem;
+}
+
+.paso-info p{
+font-size:1.2rem;
+}
+
+.consejo{
+font-size:1rem;
+}
+
+}
+
+
+
+/* ==========================================
+   VISOR FULLSCREEN
+========================================== */
+
+.visor{
+
+display:none;
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.90);
+
+z-index:999999;
+
+align-items:center;
+justify-content:center;
+
+overflow:hidden;
+
+}
+
+
+
+.visor button{
+
+position:absolute;
+
+top:25px;
+right:30px;
+
+background:#FCBD21;     /*  boton cerrar    */
+border:none;
+
+color:white;
+font-size:28px;
+
+width:50px;
+height:50px;
+
+border-radius:50%;
+
+cursor:pointer;
+
+}
+
+
+
+.imagen-zoom{
+
+max-width:95%;
+max-height:95%;
+
+object-fit:contain;
+
+border-radius:20px;
+
+cursor:grab;
+
+transition:transform .2s ease;
+
+touch-action:none;
+
+user-select:none;
+-webkit-user-drag:none;
+
+pointer-events:auto;
+
+}
+
+
+
+.imagen-zoom:active{
+cursor:grabbing;
+}
+
+
+
+/* ==========================================
+   BOTONES PASOS
+========================================== */
+
+.navegacion-pasos{
+
+position:absolute;
+right:20px;
+top:50%;
+transform:translateY(-50%);
+
+display:flex;
+flex-direction:column;
+gap:8px;
+
+z-index:10;
+
+}
+
+
+
+.btn-paso{
+
+background:#FCBD21;     /*  boton laterales     */
+color:white;
+
+text-decoration:none;
+
+width:65px;
+height:150px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:25px;
+
+font-size:1.1rem;
+font-weight:bold;
+
+box-shadow:0 8px 18px rgba(217,48,48,.35);      /* sombras lateral  */
+
+writing-mode:vertical-rl;
+transform:rotate(180deg);
+
+transition:.3s;
+
+}
+
+
+
+.btn-paso:hover{
+
+background:#F7CD63;     /*  boton laterales     */
+transform:rotate(180deg) scale(1.08);
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE CELULAR BOTONES
+========================================== */
+
+@media(max-width:700px){
+
+.navegacion-pasos{
+
+position:relative;
+right:auto;
+top:auto;
+transform:none;
+
+width:100%;
+
+display:flex;
+flex-direction:row;
+justify-content:center;
+
+gap:15px;
+
+margin-top:40px;
+
+}
+
+.btn-paso{
+
+writing-mode:horizontal-tb;
+transform:none;
+
+width:45%;
+height:60px;
+
+border-radius:30px;
+
+font-size:1.2rem;
+
+}
+
+.btn-paso:hover{
+transform:scale(1.05);
+}
+
+.btn-paso.volver{
+font-size:0;
+}
+
+.btn-paso.volver::after{
+content:"⇠ Volvamos";
+font-size:1.2rem;
+}
+
+.btn-paso.avanzar{
+font-size:0;
+}
+
+.btn-paso.avanzar::after{
+content:"Vamos ⇢";
+font-size:1.2rem;
+}
+
+.btn-paso.avanzar2{
+font-size:0;
+}
+
+.btn-paso.avanzar2::after{
+content:"Terminar ⇢";
+font-size:1.2rem;
+}
+
+}
+
+
+
+
+/* ==========================================
+==========================================
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+==========================================
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+
+             PARTE FINAAAL
+
+==========================================
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+==========================================    
+==========================================
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+========================================== 
+==========================================  */
+
+
+
+
+/* ==========================================
+   BLOQUEAR DESPLAZAMIENTO LATERAL
+========================================== */
+
+html, body{
+
+width:100%;
+max-width:100%;
+overflow-x:hidden;
+
+}
+
+*{
+box-sizing:border-box;
+}
+
+img{
+max-width:100%;
+}
+
+
+
+/* ==========================================
+   RESULTADO FINAL SNOOPY
+========================================== */
+
+.resultado-final{
+
+background:#242222; /* fondo pasos*/
+
+padding:120px 20px 20px 20px;
+
+text-align:center;
+
+}
+
+
+
+/* TITULO */
+
+.resultado-final h2{
+
+font-size:4rem;
+color:#FCBD21; /* titulo pasose */
+
+margin-bottom:40px;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+.resultado-final h2{
+
+font-size:2.2rem;
+
+margin-bottom:40px;
+
+}
+
+}
+
+
+
+/* ==========================================
+   CARRUSEL FINAL
+========================================== */
+
+.carrusel-final{
+
+width:100%;
+overflow:hidden;
+margin:40px auto;
+
+}
+
+.carrusel-track{
+
+display:flex;
+gap:35px;
+
+width:max-content;
+
+animation:moverFotos 45s linear infinite;
+
+}
+
+.carrusel-track img{
+
+width:650px;
+height:500px;
+
+object-fit:cover;
+
+border-radius:35px;
+
+}
+
+@keyframes moverFotos{
+
+from{
+transform:translateX(0);
+}
+
+to{
+transform:translateX(-50%);
+}
+
+}
+
+
+
+/* CELULAR */
+
+@media(max-width:700px){
+
+.carrusel-track{
+gap:20px;
+}
+
+.carrusel-track img{
+
+width:300px;
+height:260px;
+
+border-radius:25px;
+
+}
+
+}
+
+
+
+/* ==========================================
+   TEXTO FINAL
+========================================== */
+
+.resultado-texto{
+
+font-size:2rem;
+color:#D9D7D7;
+
+margin:35px 0;
+
+}
+
+
+
+/* ==========================================
+   BOTONES
+========================================== */
+
+.resultado-botones{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+
+margin-bottom:40px;
+
+}
+
+
+
+/* BOTÓN CONFETI */
+
+.resultado-botones button{
+
+background:#FCBD21; /* boton felicidades */
+
+border:none;
+
+padding:0 35px;
+
+height:60px;
+
+border-radius:40px;
+
+font-size:1.3rem;
+
+font-weight:bold;
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+.resultado-botones button:hover{
+
+background:#F7CD63;         /* boton felicidades     */
+transform:scale(1.05);
+
+}
+
+
+
+/* BOTÓN AZUL (CAMBIADO A SNOOPY) */
+
+.btn-azul{
+
+background:#b9e4c9; /* verde suave */
+
+color:#3C8260;
+
+padding:18px 35px;
+
+border-radius:40px;
+
+font-size:1.3rem;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+height:60px;
+
+}
+
+.btn-azul:hover{
+
+transform:scale(1.05);
+background:#8fd3a7;
+
+}
+
+
+
+/* ==========================================
+   MENSAJE FINAL
+========================================== */
+
+.final-box{
+
+text-align:center;
+padding:50px 20px;
+
+}
+
+.final-box button{
+
+background:#f6a5a5;
+
+border:none;
+
+padding:18px 35px;
+
+border-radius:40px;
+
+font-size:1.5rem;
+
+font-weight:700;
+
+color:white;
+
+cursor:pointer;
+
+box-shadow:0 8px 20px rgba(233,107,107,.3);
+
+}
+
+.mensaje-contenedor{
+
+height:60px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+#mensaje-final{
+
+display:none;
+
+margin-top:30px;
+
+font-size:2.5rem;
+font-weight:800;
+
+color:#F7CD63;          /*  mensaje felici     */
+
+animation:aparecer .6s ease;
+
+}
+
+@keyframes aparecer{
+
+from{
+transform:scale(.5);
+opacity:0;
+}
+
+to{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+
+
+/* RESPONSIVE FINAL */
+
+@media(max-width:700px){
+
+#mensaje-final{
+font-size:1.8rem;
+padding:0 20px;
+}
+
+.resultado-botones{
+flex-direction:column;
+gap:20px;
+}
+
+.resultado-botones button,
+.btn-azul{
+width:260px;
+}
+
+}
+
+
+
+/* ==========================================
+   ELIMINAR TOQUES AZULES
+========================================== */
+
+button,
+a,
+.btn-azul,
+.archivo-des-mat,
+.resultado-botones button,
+.final-box button{
+
+-webkit-tap-highlight-color: transparent;
+outline: none;
+text-decoration: none;
+
+}
+
+button:focus,
+a:focus{
+outline:none;
+}
+
+
+
+/* ==========================================
+   FOOTER SNOOPY
+========================================== */
+
+footer{
+
+background-color:#242222;       /*      fondo footer    */
+
+background-image:url('img/footer.png');
+
+background-size:100% auto;
+
+background-position:center bottom;
+
+background-repeat:no-repeat;
+
+min-height:600px;
+height:182px;
+
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+align-items:center;
+
+padding-bottom:35px;
+
+text-align:center;
+
+font-size:2rem;
+
+font-weight:400;
+
+color:#2f3d2f;
+
+}
+
+
+
+/* TEXTO FINAL */
+
+footer span{
+
+display:block;
+
+color:#fff;
+
+font-size:3rem;
+
+font-weight:800;
+
+}
+
+
+
+/* FOOTER CELULAR */
+
+@media(max-width:600px){
+
+footer{
+
+background-image:url('img/footer-cel.png');
+
+background-size:100% auto;
+
+min-height:0px;
+
+background-position:center bottom;
+
+padding-bottom:20px;
+
+font-size:0.9rem;
+
+}
+
+footer span{
+
+font-size:1.6rem;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+
+
+
+
+
+
+<!-- ==========================================
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+
+
+     CONTENIDOOOOOOOOS
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=============================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+
+========================================== -->
+
+<body>
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header>
+
+    <div class="logo-container">
+
+        <img src="img/logo.png" alt="Logo">
+
+        <a href="index.html">Porta Lapicel</a>
+
+    </div>
+
+</header>
+
+<main>
+
+
+
+
+<!-- ==========================================
+  ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+     PORTADA DEL PROYECTO
+
+==========================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+ -->
+
+<section class="portada">
+
+  <div class="portada-contenedor">
+
+    <div class="portada-imagen">
+
+      <img 
+      src="img-batman/final1.jpg" 
+      alt="Porta Lapicel terminado"
+      class="imagen-portada">
+
+    </div>
+
+    <div class="portada-info">
+
+      <h1>
+      Crea tu propio 
+      <span>Porta Lapicel</span> ✏️
+      </h1>
+
+      <p>
+      Transforma materiales simples en una creación
+      única, creativa y útil para organizar tus lápices.
+      </p>
+
+      <a href="#materiales" class="boton">
+      Comencemos!! 🚀
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- ==========================================
+  ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+  
+
+     SECCIÓN MATERIALES
+
+==========================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+======================================= -->
+
+<section id="materiales" class="materiales">
+
+  <h2>
+  🧰 Materiales
+  </h2>
+
+  <p class="subtitulo">
+  Estos son todos los materiales que necesitaremos para armar este hermoso PortaLapicel <:
+  </p>
+
+  <div class="contenedor-materiales">
+
+  <!-- ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 1 
+
+  ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================-->
+
+  <div class="tarjeta-material">
+
+  <img src="img-batman/materiales-1.jpg" alt="Chapitas">
+
+  <h3>
+  Pastas de cuadernos viejos
+  </h3>
+
+  <p>
+  ➝ Se usan como base y espaldar del PortaLapicel, dando firmeza y soporte a toda la estructura.
+  </p>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 2
+
+  ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-batman/materiales-2.jpg" alt="Palitos">
+
+  <h3>
+  Palitos baja lengua  
+  </h3>
+
+  <p>
+  ➝ Necesitamos 64 palitos para forrar, reforzar y decorar toda la estructura del PortaLapicel y PortaCel.
+  </p>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 3 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-batman/materiales-3.jpg" alt="Fideos">
+
+  <h3>
+  Tapitas de botellas  
+  </h3>
+
+  <p>
+ ➝ Necesitamos 4 tapitas para colocarlas en la base del PortaCel, funcionando como soportes decorativos y prácticos. 🟡🟠
+  </p>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 4 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-batman/materiales-4.jpg" alt="Pinturas">
+
+  <h3>
+  Témperas de colores  
+  </h3>
+
+  <p>
+  ➝ Necesitamos los colores azul, negro, amarillo y anaranjado para pintar los palitos, las chapitas y dar los detalles decorativos al PortaLapicel. 
+  </p>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 5 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-batman/materiales-5.jpg" alt="Pinturas">
+
+  <h3>
+  Materiales esenciales
+  </h3>
+
+  <p>
+  Necesitamos tijera filuda, pincel, regla y pegamento fuerte
+  </p>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 6 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-batman/materiales-6.jpg" alt="Pinturas">
+
+  <h3>
+  Plantilla PortaLápiz
+  </h3>
+
+    <div class="archivo-des-mat">
+
+        <a href="img-batman/Bataman-Plantilla-1.pdf" target="_blank" download="Bataman-Plantilla-1.pdf">
+        ⬇ Descargar PDF
+        </a>
+
+    </div>
+
+  </div>
+
+  <!--
+  ==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 7 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+  <img src="img-batman/materiales-7.jpg" alt="Pinturas">
+
+  <h3>
+  Plantilla MiniBasurero
+  </h3>
+
+    <div class="archivo-des-mat">
+
+        <a href="img-batman/Bataman-Plantilla-2.pdf" target="_blank" download="Bataman-Plantilla-2.pdf">
+        ⬇ Descargar PDF
+        </a>
+
+    </div>
+
+  </div>
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 8 
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+    <img src="img-batman/materiales-8.jpg" alt="Pinturas">
+
+    <h3>
+    Plantilla Figuritas
+    </h3>
+
+    <div class="archivo-des-mat">
+
+        <a href="img-batman/Bataman-Plantilla-4.pdf" target="_blank" download="Bataman-Plantilla-4.pdf">
+        ⬇ Descargar PDF
+        </a>
+
+    </div>
+
+  </div>
+
+
+  <!--==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+  TARJETA 9
+
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+==================================
+=======================================
+
+ -->
+
+  <div class="tarjeta-material">
+
+    <img src="img-batman/materiales-9.jpg" alt="Pinturas">
+
+    <h3>
+    Plantilla Base
+    </h3>
+
+    <div class="archivo-des-mat">
+
+        <a href="img-batman/Bataman-Plantilla-3.pdf" target="_blank" download="Bataman-Plantilla-3.pdf">
+        ⬇ Descargar PDF
+        </a>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ==========================================
+    ==========================================
+    ==========================================
+    ==========================================
+        ==========================================
+    ==========================================
+    ==========================================
+        ==========================================
+    ==========================================
+    ==========================================
+     PASO 1
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+    ==========================================
+    ==========================================
+    ==========================================
+        ==========================================
+    ==========================================
+    ========================================== -->
+
+
+
+<section class="pasos" id="paso1">
+
+<h2>
+Comencemos!!✨
+</h2>
+
+<div class="paso-card">
+
+<img 
+src="img-batman/pasos-1.jpg"
+alt="Paso 1"
+onclick="abrirPaso('img-batman/pasos-1.jpg')"
+>
+
+<div class="paso-info">
+
+<h3>
+📌 Paso 1: Preparar las tapas de los cuadernos
+</h3>
+
+<p>
+Desencuaderna las tapas de dos cuadernos usados retirando la pasta.
+Recorta cada tapa por la mitad, tal como se aprecia en la imagen. ✂️📒
+</p>
+
+
+</div>
+</div>
+
+<div class="navegacion-pasos">
+
+<a href="#materiales" class="btn-paso volver">
+Volvamos   ⇢
+</a>
+
+<a href="#paso2" class="btn-paso avanzar">
+⇠   Vamos
+</a>
+
+</div>
+
+<div class="visor" id="visor">
+
+<button onclick="cerrarPaso()">✕</button>
+
+<img 
+src="img-batman/pasos-1.jpg"
+class="imagen-zoom"
+id="imagenZoom"
+/>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- PASO 2 -->
+
+
+<section class="pasos" id="paso2">
+
+<div class="paso-card">
+
+<img 
+src="img-batman/pasos-2.jpg"
+alt="Paso 2"
+onclick="abrirPaso('img-batman/pasos-2.jpg')"
+>
+
+<div class="paso-info">
+
+<h3>
+📌 Paso 2: Marcar el agujero para el cable
+</h3>
+
+<p>
+Con ayuda de la plantilla, ubica el punto exacto donde se debe hacer el agujero para el ingreso del cable cargador del celular.
+Esto te permitirá que el soporte quede funcional y bien adaptado. 🔌📱
+</p>
+
+
+<div class="archivo-descarga">
+
+    <span>
+       📄 Plantilla-Base
+    </span>
+
+    <a href="img-batman/Bataman-Plantilla-3.pdf" target="_blank" download="Bataman-Plantilla-3.pdf">
+    ⬇ Descargar PDF
+    </a>
+
+</div>
+
+
+
+
+
+</div>
+</div>
+
+<div class="navegacion-pasos">
+
+<a href="#paso1" class="btn-paso volver">
+Volvamos ⇢
+</a>
+
+<a href="#paso3" class="btn-paso avanzar">
+⇠ Vamos
+</a>
+
+</div>
+
+</section>
+
+<div class="visor" id="visor2">
+
+<button onclick="cerrarPaso()">✕</button>
+
+<img 
+src="img-batman/pasos-2.jpg"
+class="imagen-zoom"
+id="imagenZoom2"
+/>
+
+</div>
+
+
+
+
+
+
+<!-- PASO 3 -->
+
+<section class="pasos" id="paso3">
+
+<div class="paso-card">
+
+<img 
+src="img-batman/pasos-3.jpg"
+alt="Paso 3"
+onclick="abrirPaso('img-batman/pasos-3.jpg')"
+>
+
+<div class="paso-info">
+
+<h3>
+📌 Paso 3: Doblar las pastas y colocar la plantilla
+</h3>
+
+<p>
+Dobla las pastas de los cuadernos por la mitad.
+Coloca la plantilla sobre la parte central de la pasta del cuaderno; verás que encajará perfectamente. 📒📐
+</p>
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Recorta primero la plantilla para poder colocarla sobre la pasta del cuaderno. Luego, con un lápiz, marca la zona con precisión para que el diseño quede bien definido. ✏️
+</div>
+
+</div>
+</div>
+
+<div class="navegacion-pasos">
+
+<a href="#paso2" class="btn-paso volver">
+Volvamos ⇢
+</a>
+
+<a href="#paso4" class="btn-paso avanzar">
+⇠ Vamos
+</a>
+
+</div>
+
+</section>
+
+<div class="visor" id="visor3">
+
+<button onclick="cerrarPaso()">✕</button>
+
+<img 
+src="img-batman/pasos-3.jpg"
+class="imagen-zoom"
+id="imagenZoom3"
+/>
+
+</div>
+
+
+
+
+
+<!-- PASO 4 -->
+
+<section class="pasos" id="paso4">
+
+<div class="paso-card">
+
+<img 
+src="img-batman/pasos-4.jpg"
+alt="Paso 4"
+onclick="abrirPaso('img-batman/pasos-4.jpg')"
+>
+
+<div class="paso-info">
+
+<h3>
+📌 Paso 4: Formar el espaldar del PortaLapicel
+</h3>
+
+<p>
+Toma la otra pasta del cuaderno ya doblada.
+Haz un doblez pequeño en la punta, con un ancho de 2 cm, para crear el espaldar de tu PortaLapicel. 📒📏
+</p>
+
+
+
+</div>
+</div>
+
+<div class="navegacion-pasos">
+
+<a href="#paso3" class="btn-paso volver">
+Volvamos ⇢
+</a>
+
+<a href="#paso5" class="btn-paso avanzar">
+⇠ Vamos
+</a>
+
+</div>
+
+</section>
+
+<div class="visor" id="visor4">
+
+<button onclick="cerrarPaso()">✕</button>
+
+<img 
+src="img-batman/pasos-4.jpg"
+class="imagen-zoom"
+id="imagenZoom4"
+/>
+
+</div>
+
+
+
+
+
+<!-- ==========================================
+     PASO 5
+========================================== -->
+
+
+<section class="pasos" id="paso5">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-5.jpg"
+alt="Paso 5"
+onclick="abrirPaso('img-batman/pasos-5.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 5: Unir el espaldar a la base
+</h3>
+
+
+<p>
+Con ayuda de un pegamento fuerte, une el doblez del espaldar a la base, tal como se aprecia en la imagen.
+Este paso asegura que la estructura quede firme y estable. 📒🛠️
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Asegúrate de usar un buen pegamento para lograr un agarre sólido y que el espaldar se mantenga firme en todo momento. ✨
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso4" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso6" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor5">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-5.jpg"
+class="imagen-zoom"
+id="imagenZoom5"
+>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 6
+========================================== -->
+
+
+<section class="pasos" id="paso6">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-6.jpg"
+alt="Paso 6"
+onclick="abrirPaso('img-batman/pasos-6.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 6: Usar la plantilla para el porta lápices
+</h3>
+
+
+<p>
+Utiliza la siguiente plantilla para armar el porta lápices, tal como se aprecia en la imagen.
+Sigue cada indicación para que la estructura quede bien formada y funcional. 📐✂️
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Sigue cuidadosamente las instrucciones de la plantilla para evitar inconvenientes y asegurar que todas las piezas encajen correctamente. ✅
+
+</div>
+
+
+
+<div class="archivo-descarga">
+
+    <span>
+       📄 Plantilla-PortaLápiz
+    </span>
+
+    <a href="img-batman/Bataman-Plantilla-1.pdf" target="_blank" download="Bataman-Plantilla-1.pdf">
+    ⬇ Descargar PDF
+    </a>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso5" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso7" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor6">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-6.jpg"
+class="imagen-zoom"
+id="imagenZoom6"
+>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 7
+========================================== -->
+
+
+<section class="pasos" id="paso7">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-7.jpg"
+alt="Paso 7"
+onclick="abrirPaso('img-batman/pasos-7.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 7: Resultado preliminar
+</h3>
+
+
+<p>
+Al terminar este paso, la estructura debe quedar como se aprecia en la imagen.
+No te preocupes si la cartulina se mancha durante el proceso, ya que después se pintará todo de negro para darle un acabado uniforme. 🖤📒
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Lo más importante es que la estructura quede firme. No importa si hay manchas, asegúrate de que las uniones estén sólidas y resistentes antes de continuar. 💪
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso6" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso8" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor7">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-7.jpg"
+class="imagen-zoom"
+id="imagenZoom7"
+>
+
+
+</div>
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 8
+===================================================================================== -->
+
+
+<section class="pasos" id="paso8">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-8.jpg"
+alt="Paso 8"
+onclick="abrirPaso('img-batman/pasos-8.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 8: Armar los cajones del mini basurero
+</h3>
+
+
+<p>
+Repite el mismo procedimiento utilizando la plantilla de los cajones para formar el mini basurero.
+El resultado debe quedar como se aprecia en la imagen, con las piezas bien alineadas y firmes. 🗑️📐
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Ten paciencia durante este paso; la idea es divertirse mientras armas tu proyecto. Disfruta el proceso y no te preocupes si toma un poco más de tiempo. ✨😄
+
+</div>
+
+
+<div class="archivo-descarga">
+
+    <span>
+       📄 Plantilla-basurero
+    </span>
+
+    <a href="img-batman/Bataman-Plantilla-2.pdf" target="_blank" download="Bataman-Plantilla-2.pdf">
+    ⬇ Descargar PDF
+    </a>
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso7" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso9" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor8">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-8.jpg"
+class="imagen-zoom"
+id="imagenZoom8"
+>
+
+
+</div>
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 9
+===================================================================================== -->
+
+
+<section class="pasos" id="paso9">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-9.jpg"
+alt="Paso 9"
+onclick="abrirPaso('img-batman/pasos-9.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 9: Pintar los palitos baja lengua
+</h3>
+
+
+<p>
+Pinta todos los palitos baja lengua de color negro o azul noche, según prefieras.
+Este paso dará uniformidad y un acabado elegante al proyecto. 🎨🖤💙
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Ten paciencia, ya que son varios palitos por pintar. Puedes pedir ayuda a un amigo cercano para que el proceso sea más divertido y rápido. 🤝😄
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso8" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso10" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor9">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-9.jpg"
+class="imagen-zoom"
+id="imagenZoom9"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 10
+===================================================================================== -->
+
+
+<section class="pasos" id="paso10">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-10.jpg"
+alt="Paso 10"
+onclick="abrirPaso('img-batman/pasos-10.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 10: Armar el PortaCel
+</h3>
+
+
+<p>
+Toma tres palitos baja lengua y córtalos por la mitad.
+Con estas piezas comenzarás a formar la estructura del PortaCel. 📱✂️
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Asegúrate de usar una tijera bien filosa para cortar los palitos. Así evitarás dificultades y lograrás cortes más limpios y precisos. ✨
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso9" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso11" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor10">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-10.jpg"
+class="imagen-zoom"
+id="imagenZoom10"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 11
+===================================================================================== -->
+
+
+<section class="pasos" id="paso11">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-11.jpg"
+alt="Paso 11"
+onclick="abrirPaso('img-batman/pasos-11.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 11: Formar la base del PortaCel
+</h3>
+
+
+<p>
+Apila los trozos que obtuviste al cortar los tres palitos por la mitad.
+Con ellos, arma la base del PortaCel, tal como se aprecia en la imagen. 📱🪵
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Usa un buen pegamento para asegurar las piezas y acelerar el proceso de pegado. Así la base quedará firme y lista para continuar con la estructura. ✨
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso10" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso12" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor11">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-11.jpg"
+class="imagen-zoom"
+id="imagenZoom11"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 12
+===================================================================================== -->
+
+
+<section class="pasos" id="paso12">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-12.jpg"
+alt="Paso 12"
+onclick="abrirPaso('img-batman/pasos-12.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 12: Refuerzo de la base del PortaCel
+</h3>
+
+
+<p>
+Toma dos palitos baja lengua y mide 9 cm de largo en cada uno.
+Córtalos para obtener dos piezas: coloca una en la parte inferior para unir ambas partes de la base y la otra en la parte superior para reforzar la unión, pegándola encima. 📏✂️📱
+</p>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso11" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso13" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor12">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-12.jpg"
+class="imagen-zoom"
+id="imagenZoom12"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 13
+===================================================================================== -->
+
+
+<section class="pasos" id="paso13">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-13.jpg"
+alt="Paso 13"
+onclick="abrirPaso('img-batman/pasos-13.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 13: Refuerzo lateral del PortaCel
+</h3>
+
+
+<p>
+Toma otro palito baja lengua y pártelo por la mitad.
+Pega cada mitad a los lados de la estructura, tal como se aprecia en la imagen. Esto dará mayor estabilidad al PortaCel. 📱🪵
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Recuerda que puedes presionar la foto para verla con más detalle y asegurarte de colocar las piezas correctamente. 🔍✨
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso12" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso14" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor13">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-13.jpg"
+class="imagen-zoom"
+id="imagenZoom13"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 14
+===================================================================================== -->
+
+
+<section class="pasos" id="paso14">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-14.jpg"
+alt="Paso 14"
+onclick="abrirPaso('img-batman/pasos-14.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 14: Colocar el refuerzo posterior
+</h3>
+
+
+<p>
+Toma un palito baja lengua y mide 9,5 cm de largo.
+Córtalo y colócalo en la parte posterior de la estructura, tal como se aprecia en la imagen, para darle un mejor agarre y estabilidad al PortaCel. 📏✂️📱
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+ Es recomendable medir con precisión de acuerdo a cómo vaya quedando tu PortaCel. Ajusta el corte según lo necesites para que encaje perfectamente y refuerce la estructura. 🔍✨
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso13" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso15" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor14">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-14.jpg"
+class="imagen-zoom"
+id="imagenZoom14"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 15
+===================================================================================== -->
+
+
+<section class="pasos" id="paso15">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-15.jpg"
+alt="Paso 15"
+onclick="abrirPaso('img-batman/pasos-15.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 15: Colocar los palitos laterales
+</h3>
+
+
+<p>
+Toma dos palitos baja lengua y pégalos directamente a los lados de la estructura, tal como se aprecia en la imagen.
+En este paso no es necesario realizar ningún corte, solo asegurarte de que queden bien alineados. 📱🪵
+</p>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso14" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso16" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor15">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-15.jpg"
+class="imagen-zoom"
+id="imagenZoom15"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 16
+===================================================================================== -->
+
+
+<section class="pasos" id="paso16">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-16.jpg"
+alt="Paso 16"
+onclick="abrirPaso('img-batman/pasos-16.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 16: Refuerzo con palito transversal
+</h3>
+
+
+<p>
+Toma otro palito baja lengua y, con ayuda de un lápiz, mide “al cálculo” la longitud necesaria para que pueda sostener los dos palitos laterales que pegaste antes.
+Corta el palito siguiendo las guías y pégalo en la posición indicada, de modo que sirva como soporte transversal. 📏✂️🪵
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Es recomendable medir directamente sobre la estructura para ajustar la longitud exacta. Así te aseguras de que el palito encaje perfectamente y refuerce la unión de los laterales. 🔍✨
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso15" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso17" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor16">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-16.jpg"
+class="imagen-zoom"
+id="imagenZoom16"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 17
+===================================================================================== -->
+
+
+<section class="pasos" id="paso17">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-17.jpg"
+alt="Paso 17"
+onclick="abrirPaso('img-batman/pasos-17.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 17: Medir la distancia interna
+</h3>
+
+
+<p>
+Toma otro palito baja lengua y, con ayuda de un lápiz, mide “al cálculo” la distancia interna que quedó en el trabajo anterior.
+Corta el palito siguiendo esa medida y colócalo en la posición indicada para reforzar la estructura desde dentro. 📏✂️🪵
+</p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso16" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso18" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor17">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-17.jpg"
+class="imagen-zoom"
+id="imagenZoom17"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 18
+===================================================================================== -->
+
+
+<section class="pasos" id="paso18">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-18.jpg"
+alt="Paso 18"
+onclick="abrirPaso('img-batman/pasos-18.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 18: Colocar los soportes del celular
+</h3>
+
+
+<p>
+Ya con gran parte de la estructura armada, es momento de añadir los soportes del celular.
+Toma los palitos baja lengua restantes y corta sus puntas, tal como se aprecia en la imagen.
+Colócalos en la posición indicada para que funcionen como soporte firme del PortaCel. 📱✂️🪵
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+ Asegúrate de que los cortes sean parejos y que los soportes queden bien alineados. Esto garantizará que el celular se mantenga estable al usar el PortaCel. 🔍✨
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso17" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso19" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor18">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-18.jpg"
+class="imagen-zoom"
+id="imagenZoom18"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 19
+===================================================================================== -->
+
+
+<section class="pasos" id="paso19">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-19.jpg"
+alt="Paso 19"
+onclick="abrirPaso('img-batman/pasos-19.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 19: Colocar los soportes en la base
+</h3>
+
+
+<p>
+Apila los palitos de dos en dos y pégalos firmemente sobre la base que creaste al inicio.
+Esto dará mayor resistencia y servirá como soporte sólido para el PortaCel, tal como se aprecia en la imagen. 📱🪵✨
+</p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso18" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso20" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor19">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-19.jpg"
+class="imagen-zoom"
+id="imagenZoom19"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 20
+===================================================================================== -->
+
+
+<section class="pasos" id="paso20">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-20.jpg"
+alt="Paso 20"
+onclick="abrirPaso('img-batman/pasos-20.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 20: Forrar el espaldar y la base
+</h3>
+
+
+<p>
+Procede a forrar con palitos baja lengua el espaldar y la base que construiste previamente con la pasta del cuaderno.
+Colócalos uno junto a otro, tal como se aprecia en la imagen, para cubrir toda la superficie y darle un acabado uniforme. 🪵📒✨
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Asegúrate de que los palitos queden bien alineados y pegados firmemente. Esto no solo mejora la estética, sino también la resistencia de la estructura. 💪
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso19" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso21" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor20">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-20.jpg"
+class="imagen-zoom"
+id="imagenZoom20"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 21
+===================================================================================== -->
+
+
+<section class="pasos" id="paso21">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-21.jpg"
+alt="Paso 21"
+onclick="abrirPaso('img-batman/pasos-21.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 21: Forrar y pintar el PortaLápiz
+</h3>
+
+
+<p>
+Haz lo mismo con la cartulina que armamos para el PortaLapicel: fórrala con palitos baja lengua para darle mayor firmeza y estética.
+Luego, pinta de color negro los lados blancos que se ven externamente, tal como se aprecia en la imagen. 🖤📒🪵
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Asegúrate de cubrir bien las áreas visibles para que el acabado sea uniforme. La pintura negra ayudará a disimular imperfecciones y dará un aspecto más elegante al proyecto. ✨
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso20" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso22" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor21">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-21.jpg"
+class="imagen-zoom"
+id="imagenZoom21"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 22
+===================================================================================== -->
+
+
+<section class="pasos" id="paso22">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-22.jpg"
+alt="Paso 22"
+onclick="abrirPaso('img-batman/pasos-22.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 22: Forrar la cajita del mini basurero
+</h3>
+
+
+<p>
+Forra con palitos baja lengua la cajita del mini basurero, tal como se aprecia en la imagen.
+Esto dará un acabado más resistente y decorativo al cajoncito. 🗑️🪵✨
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+ Aprovecha los restos de trocitos de palitos baja lengua. Apílalos y pégalos para formar un pequeño soporte que te permitirá jalar fácilmente tu mini cajoncito. 🔍💡
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso21" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso23" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor22">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-22.jpg"
+class="imagen-zoom"
+id="imagenZoom22"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 23
+===================================================================================== -->
+
+
+<section class="pasos" id="paso23">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-23.jpg"
+alt="Paso 23"
+onclick="abrirPaso('img-batman/pasos-23.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 23: Forrar el caparazón del mini basurero
+</h3>
+
+
+<p>
+Forra el caparazón del mini basurero con palitos baja lengua, colocándolos uno junto a otro tal como se aprecia en la imagen.
+Este paso dará un acabado uniforme y más resistente a la parte externa del basurero. 🗑️🪵✨
+</p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso22" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso24" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor23">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-23.jpg"
+class="imagen-zoom"
+id="imagenZoom23"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 24
+===================================================================================== -->
+
+
+<section class="pasos" id="paso24">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-24.jpg"
+alt="Paso 24"
+onclick="abrirPaso('img-batman/pasos-24.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 24: Pintar los lados visibles
+</h3>
+
+
+<p>
+Pinta de color negro todos los lados donde aún se vea blanco en tu PortaLapicel.
+De esta manera, lograrás un acabado uniforme y elegante en toda la estructura. 🖤🪵✨
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Aplica la pintura con calma y en capas finas para cubrir bien las superficies. Esto ayudará a disimular imperfecciones y dará un aspecto más prolijo y profesional al proyecto. 🎨
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso23" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso25" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor24">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-24.jpg"
+class="imagen-zoom"
+id="imagenZoom24"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 25
+===================================================================================== -->
+
+
+<section class="pasos" id="paso25">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-25.jpg"
+alt="Paso 25"
+onclick="abrirPaso('img-batman/pasos-25.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 25: Pintar el espaldar y la base
+</h3>
+
+
+<p>
+Pinta cuidadosamente el espaldar y la base de toda la estructura, asegurándote de cubrir bien las superficies para un acabado uniforme. 🖤🪵✨
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Hazlo con cuidado, ya que la pintura puede manchar la mesa donde trabajas. Es recomendable colocar un papel o cartón debajo para proteger tu área de trabajo y evitar accidentes. 🎨🧻
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso24" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso26" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor25">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-25.jpg"
+class="imagen-zoom"
+id="imagenZoom25"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 26
+===================================================================================== -->
+
+
+<section class="pasos" id="paso26">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-26.jpg"
+alt="Paso 26"
+onclick="abrirPaso('img-batman/pasos-26.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 26: Pintar las chapitas
+</h3>
+
+
+<p>
+Toma cuatro chapitas y píntalas de un tono amarillo intenso, casi naranjoso.
+Estas piezas servirán como detalle decorativo y funcional dentro del PortaLapicel. 🎨🟡🟠
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Aplica la pintura en capas finas para que el color quede uniforme y vibrante. Deja secar bien antes de manipularlas para evitar manchas en tu trabajo. ✨
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso25" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso27" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor26">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-26.jpg"
+class="imagen-zoom"
+id="imagenZoom26"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 27
+===================================================================================== -->
+
+
+<section class="pasos" id="paso27">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-27.jpg"
+alt="Paso 27"
+onclick="abrirPaso('img-batman/pasos-27.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 27: Resultado final de la pintura
+</h3>
+
+
+<p>
+Una vez que pintes todo el trabajo, la estructura quedará lista y con un acabado uniforme.
+El PortaCel y PortaLapicel ya se ven geniales, con un aspecto sólido y decorativo. 😍🖤✨
+</p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso26" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso28" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor27">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-27.jpg"
+class="imagen-zoom"
+id="imagenZoom27"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 28
+===================================================================================== -->
+
+
+<section class="pasos" id="paso28">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-28.jpg"
+alt="Paso 28"
+onclick="abrirPaso('img-batman/pasos-28.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 28: Recortar las figuritas de acción
+</h3>
+
+
+<p>
+Recorta la plantilla de las figuritas de acción (Batman) siguiendo las guías, tal como se aprecia en la imagen.
+Estas piezas servirán como detalle decorativo para complementar tu PortaLapicel y darle un toque creativo. ✂️🦇✨
+</p>
+
+
+<div class="archivo-descarga">
+
+    <span>
+       📄 Plantilla- Figuritas
+    </span>
+
+    <a href="img-batman/Bataman-Plantilla-4.pdf" target="_blank" download="Bataman-Plantilla-4.pdf">
+    ⬇ Descargar PDF
+    </a>
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso27" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso29" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor28">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-28.jpg"
+class="imagen-zoom"
+id="imagenZoom28"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 29
+===================================================================================== -->
+
+
+<section class="pasos" id="paso29">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-29.jpg"
+alt="Paso 29"
+onclick="abrirPaso('img-batman/pasos-29.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 29: Decorar con las figuritas
+</h3>
+
+
+<p>
+Pega las figuritas de acción que recortaste en el paso anterior de la manera que más te guste.
+Puedes seguir la disposición que se aprecia en la imagen o dejar volar tu creatividad para lograr un diseño aún más atractivo. 🦇✨🎨
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+Juega con la ubicación de las figuras para darle dinamismo al PortaLapicel. Recuerda que la decoración es la parte más libre del proyecto, ¡hazlo único y divertido! 😍
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso28" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso30" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor29">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-29.jpg"
+class="imagen-zoom"
+id="imagenZoom29"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 30
+===================================================================================== -->
+
+
+<section class="pasos" id="paso30">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-30.jpg"
+alt="Paso 30"
+onclick="abrirPaso('img-batman/pasos-30.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 30: Decoración creativa
+</h3>
+
+
+<p>
+Ahora que la estructura está lista, puedes darle tu toque personal con formas creativas de decoración.
+Agrega las figuritas, colores o detalles que más te gusten para que tu PortaLapicel se vea único y atractivo. 🎨✨
+</p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso29" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso31" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor30">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-30.jpg"
+class="imagen-zoom"
+id="imagenZoom30"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- =================================================================================
+     PASO 31
+===================================================================================== -->
+
+
+<section class="pasos" id="paso31">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-31.jpg"
+alt="Paso 31"
+onclick="abrirPaso('img-batman/pasos-31.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 31: Decoración completa con figuritas
+</h3>
+
+
+<p>
+Llena todo el PortaLapicel con las figuritas de acción que recortaste, distribuyéndolas de manera creativa.
+Puedes cubrir varias zonas o combinarlas con otros detalles para que el resultado sea aún más llamativo y personalizado. 🦇🎨✨
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso30" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso32" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor31">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-31.jpg"
+class="imagen-zoom"
+id="imagenZoom31"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 32
+========================================== -->
+
+
+<section class="pasos" id="paso32">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-32.jpg"
+alt="Paso 32"
+onclick="abrirPaso('img-batman/pasos-32.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 32: Colocar las chapitas
+</h3>
+
+
+<p>
+Pega firmemente cada objeto en las ubicaciones que ves en la estructura.
+Las cuatro chapitas deben colocarse con mucha precisión, ajustándose a las dimensiones de la base del PortaCel.
+Una vez pegadas, deja reposar el trabajo para que el pegamento seque y todo quede bien fijo. 🟡🟠🪵✨
+</p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso31" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#paso33" class="btn-paso avanzar">
+
+⇠ Vamos
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor32">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-32.jpg"
+class="imagen-zoom"
+id="imagenZoom32"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ==========================================
+     PASO 33
+========================================== -->
+
+
+<section class="pasos" id="paso33">
+
+
+<div class="paso-card">
+
+
+<img 
+src="img-batman/pasos-33.jpg"
+alt="Paso 33"
+onclick="abrirPaso('img-batman/pasos-33.jpg')"
+>
+
+
+
+<div class="paso-info">
+
+
+<h3>
+📌 Paso 33 FINAL: Producto terminado
+</h3>
+
+
+<p>
+Una vez que coloques todo en su lugar, podrás ver cómo queda el producto final.
+Tu PortaLapicel BATMAN está completamente listo para ser utilizado y luce espectacular. 🦇✨
+</p>
+
+
+<div class="consejo">
+
+💡 Consejo:
+<br>
+ Presiona tu “botón de felicidades” que se ubica más abajo y disfruta el resultado de tu esfuerzo. ¡Has creado un proyecto único y creativo! 🎉👏
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="navegacion-pasos">
+
+
+<a href="#paso32" class="btn-paso volver">
+
+Volvamos ⇢
+
+</a>
+
+
+<a href="#final" class="btn-paso avanzar2">
+
+⇠ Terminar
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- VISOR -->
+
+
+<div class="visor" id="visor33">
+
+
+<button onclick="cerrarPaso()">
+✕
+</button>
+
+
+<img 
+src="img-batman/pasos-33.jpg"
+class="imagen-zoom"
+id="imagenZoom33"
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+    FINAAAAAL 
+
+
+
+
+    --->
+
+
+
+<section class="resultado-final" id="final">
+
+    <h2>⭐Resultado final⭐</h2>
+
+    <!-- 🔥 AQUÍ VA TU FOTO (la misma de portada) -->
+
+    <div class="carrusel-final">
+
+        <div class="carrusel-track">
+
+            <img src="img-batman/final1.jpg">
+            <img src="img-batman/final2.jpg">
+            <img src="img-batman/final3.jpg">
+            <img src="img-batman/final4.jpg">
+            <img src="img-batman/final5.jpg">
+            <img src="img-batman/final6.jpg">
+
+            <!-- repetición para movimiento infinito -->
+
+            <img src="img-batman/final1.jpg">
+            <img src="img-batman/final2.jpg">
+            <img src="img-batman/final3.jpg">
+            <img src="img-batman/final4.jpg">
+            <img src="img-batman/final5.jpg">
+            <img src="img-batman/final6.jpg">
+
+        </div>
+
+    </div>
+
+    <p class="resultado-texto">
+        "¡Tu creación está lista!"
+    </p>
+
+    <div class="resultado-botones">
+
+        <button onclick="felicidades()">
+        🎉 Felicidades
+        </button>
+
+        <a href="index.html#modelos" class="btn-azul">
+        Hagamos más!
+        </a>
+
+    </div>
+
+    <!-- MENSAJE FINAL -->
+
+    <div id="mensaje-final">
+        ¡Felicidades lo lograste! ✨
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+    <h3>Nos reservamos los derechos de autor</h3> 
+    <span>Los Audaces</span>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+// ==========================================
+// ABRIR VISOR (CORREGIDO)
+// ==========================================
+
+function abrirPaso(imagenRuta){
+
+let visores = document.querySelectorAll(".visor");
+let img = document.getElementById("imagenZoom");
+
+// cerrar todos los visores primero
+visores.forEach(v => v.style.display = "none");
+
+// reset zoom
+escala = 1;
+posicionX = 0;
+posicionY = 0;
+
+// reset imagen
+img.style.transform = "translate(0px,0px) scale(1)";
+img.style.transition = "transform .2s ease";
+
+// cambiar imagen
+img.src = imagenRuta;
+
+// mostrar visor principal
+document.getElementById("visor").style.display = "flex";
+
+}
+
+
+// ==========================================
+// CERRAR VISOR (CORREGIDO)
+// ==========================================
+
+function cerrarPaso(){
+
+document.querySelectorAll(".visor").forEach(v => {
+v.style.display = "none";
+});
+
+}
+
+
+
+// ==========================================
+// SCROLL HEADER (CORREGIDO)
+// ==========================================
+
+window.addEventListener('scroll', function(){
+
+const header = document.querySelector('header');
+
+if(window.innerWidth <= 700){
+
+header.style.padding = "10px 30px";
+header.style.background = "rgba(242,234,208)";
+header.style.boxShadow = "0 2px 15px rgba(0,0,0,.08)";
+return;
+
+}
+
+if(window.scrollY > 50){
+
+header.style.padding = "5px 30px";
+header.style.background = "rgba(235, 227, 209)";
+header.style.boxShadow = "0 8px 25px rgba(0,0,0,.15)";
+
+}else{
+
+header.style.padding = "10px 30px";
+header.style.background = "rgba(242, 234, 208)";
+header.style.boxShadow = "0 2px 15px rgba(0,0,0,.08)";
+
+}
+
+});
+
+
+
+// ==========================================
+// BLOQUEAR DRAG IMAGEN
+// ==========================================
+
+const imagen = document.getElementById("imagenZoom");
+
+imagen.addEventListener("dragstart", function(e){
+e.preventDefault();
+});
+
+
+
+// ==========================================
+// ZOOM VARIABLES
+// ==========================================
+
+let escala = 1;
+let posicionX = 0;
+let posicionY = 0;
+
+function actualizarImagen(){
+
+imagen.style.transform =
+`translate(${posicionX}px, ${posicionY}px) scale(${escala})`;
+
+}
+
+
+
+// ==========================================
+// ZOOM MOUSE WHEEL
+// ==========================================
+
+imagen.addEventListener("wheel", function(e){
+
+e.preventDefault();
+
+if(e.deltaY < 0){
+escala += 0.15;
+}else{
+escala -= 0.15;
+}
+
+if(escala < 1) escala = 1;
+if(escala > 3) escala = 3;
+
+actualizarImagen();
+
+});
+
+
+
+// ==========================================
+// TOUCH (MÓVIL)
+// ==========================================
+
+let tocando = false;
+let inicioTouchX = 0;
+let inicioTouchY = 0;
+let distanciaInicial = 0;
+
+imagen.addEventListener("touchstart", function(e){
+
+if(e.touches.length === 2){
+
+distanciaInicial = Math.hypot(
+e.touches[0].clientX - e.touches[1].clientX,
+e.touches[0].clientY - e.touches[1].clientY
+);
+
+}
+
+if(e.touches.length === 1){
+
+tocando = true;
+
+inicioTouchX = e.touches[0].clientX - posicionX;
+inicioTouchY = e.touches[0].clientY - posicionY;
+
+}
+
+});
+
+imagen.addEventListener("touchmove", function(e){
+
+// ZOOM 2 dedos
+if(e.touches.length === 2){
+
+let distanciaActual = Math.hypot(
+e.touches[0].clientX - e.touches[1].clientX,
+e.touches[0].clientY - e.touches[1].clientY
+);
+
+if(distanciaActual > distanciaInicial){
+escala += 0.03;
+}else{
+escala -= 0.03;
+}
+
+if(escala < 1) escala = 1;
+if(escala > 3) escala = 3;
+
+actualizarImagen();
+
+}
+
+// MOVER 1 dedo
+if(tocando && e.touches.length === 1){
+
+posicionX = e.touches[0].clientX - inicioTouchX;
+posicionY = e.touches[0].clientY - inicioTouchY;
+
+actualizarImagen();
+
+}
+
+});
+
+imagen.addEventListener("touchend", function(){
+tocando = false;
+});
+
+
+
+// ==========================================
+// DRAG PC
+// ==========================================
+
+let moviendo = false;
+let inicioX = 0;
+let inicioY = 0;
+
+imagen.addEventListener("mousedown", function(e){
+
+moviendo = true;
+
+inicioX = e.clientX - posicionX;
+inicioY = e.clientY - posicionY;
+
+imagen.style.cursor = "grabbing";
+
+});
+
+document.addEventListener("mousemove", function(e){
+
+if(!moviendo) return;
+
+posicionX = e.clientX - inicioX;
+posicionY = e.clientY - inicioY;
+
+actualizarImagen();
+
+});
+
+document.addEventListener("mouseup", function(){
+
+moviendo = false;
+imagen.style.cursor = "grab";
+
+});
+
+
+
+// ==========================================
+// SCROLL SUAVE
+// ==========================================
+
+document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+
+enlace.addEventListener("click", function(e){
+
+e.preventDefault();
+
+let destino = document.querySelector(this.getAttribute("href"));
+
+destino.scrollIntoView({
+behavior:"smooth",
+block:"start"
+});
+
+});
+
+});
+
+
+
+// ==========================================
+// CONFETI FINAL
+// ==========================================
+
+function felicidades(){
+
+let mensaje = document.getElementById("mensaje-final");
+
+mensaje.style.display = "block";
+mensaje.style.animation = "none";
+mensaje.offsetHeight;
+mensaje.style.animation = "aparecer .6s ease";
+
+for(let i=0;i<80;i++){
+
+let confeti=document.createElement("span");
+
+const emojis = ["🎉", "✨", "🎊", "💖", "⭐"];
+
+confeti.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+
+confeti.style.position="fixed";
+confeti.style.left=Math.random()*100+"vw";
+confeti.style.top="100vh";
+confeti.style.fontSize=(20 + Math.random()*15)+"px";
+confeti.style.zIndex="999999";
+confeti.style.transition=(2 + Math.random()*2)+"s";
+
+document.body.appendChild(confeti);
+
+setTimeout(() => {
+confeti.style.top = "-10vh";
+confeti.style.transform = "translateY(-100vh) rotate(" + Math.random()*360 + "deg)";
+confeti.style.opacity = "0";
+},50);
+
+setTimeout(()=>{
+confeti.remove();
+},3000);
+
+}
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
